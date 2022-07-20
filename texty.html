@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texty</title>
+    <link rel="stylesheet" href="texty.css">
+    <link rel="stylesheet" href="root.css">
+
+
+
+</head>
+
+
+<body onload="loader()">
+    
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+    <div class="texty" >
+        <div class="icons">
+            <a href="index.html" class="home-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+    
+            <a href="portfolio.html" class="portfolio-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+            </a>
+    
+            <a href="#" class="star-icon" onclick="changeColorMode()">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </a>
+    
+        </div>
+    
+        <div class="dopis-v-lahvi">
+            <h4>vzkaz v lahvi</h4>
+            <p>Krátká povídla o dvou klucích, jeden  z nich najde láhvi  se vzkazem a snaží se najít toho, kdo tam láhev nechal.</p>
+            <div class="sloh1">
+            <a href="dopis v lahvi (1).png" target="_blank">
+            <img src="dopis v lahvi (1).png" alt="">
+            </a>
+            <a href="dopis v lahvi (2).png" target="_blank">
+            <img src="dopis v lahvi (2).png" alt="">
+            </a>
+            <a href="dopis v lahvi (3).png" target="_blank">
+            <img src="dopis v lahvi (3).png" alt=""></a>
+            </div>
+        </div>
+       
+        <div class="mami">
+            <h4>mami?</h4>
+            <p>Povídka napsaná v ich-formě s empatizovaným textem jako myšlenkou.</p>
+            <div class="sloh2">
+            <a href="mami (1).png">
+                <img src="mami (1).png" alt="">
+            </a>
+            <a href="mami (2).png">
+                <img src="mami (2).png" alt="">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nevis">
+        <h4>nikdy nevíš</h4>
+        <p>Young adult povídka z pohledu dvou kluků, Martina a Jerryho. Martin je filmmaker a jerry básníčkář, ale co když Martin najde pod lavičkou v parku tajemný notes?</p>
+        <div class="sloh3">
+        <a href="nevíš (1).png" target="_blank">
+        <img src="nevíš (1).png" alt="">
+        </a>
+        <a href="nevíš (2).png" target="_blank">
+        <img src="nevíš (2).png" alt="">
+        </a>
+        <a href="nevíš (3).png" target="_blank">
+        <img src="nevíš (3).png" alt=""></a>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+  <script>
+  
+    var timer;
+    function loader() {
+        timer = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+        document.getElementById("load-logo").style.display = "none";
+        
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>function changeImage () {
+    
+
+    const logo2 = document.getElementById("load-logo")
+
+    if (localStorage.getItem("colorMode") == "dark") {
+        logo2.classList.add("invert");
+    } else {
+        logo2.classList.remove("invert");
+    }
+
+}
+
+changeImage ();</script>
+<script>function setColorMode() {
+    var elementBody = document.body;
+    
+    if (localStorage.getItem("colorMode") == "dark") {
+        elementBody.classList.add("dark-mode");
+    } else {
+        elementBody.classList.remove("dark-mode");
+    }
+
+
+
+};
+
+
+function changeColorMode () {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("colorMode", "dark");
+    } else {
+        localStorage.setItem("colorMode", "light");
+    }
+
+    console.log(localStorage.getItem("colorMode")); 
+};
+
+
+
+setColorMode();</script>
+</body>
+</html>

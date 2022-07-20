@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--first-color);
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.loader img {
+    width: 20px;
+    height: auto;
+
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+    
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.portfolio-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.portfolio-icon:hover {
+    color: var(--third-color);
+}
+
+.mojelogo, .postavy {
+    padding: 20px;
+    text-align: center;
+}
+
+.mojelogo h4, .postavy h4 {
+    font-size: 50px;
+    color: var(--second-color);
+    padding: 20px;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+
+.grafika1, .grafika2 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.grafika1 img, .grafika2 img {
+    width: auto;
+    height: 200px;
+    transition: 200ms;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    margin-bottom: 25px;
+    border-color: var(--fourth-color);
+}    
+
+.grafika1 img:hover, .grafika2 img:hover {
+    border-color: var(--third-color);
+}
+
+.grafika1 p, .grafika2 p {
+    font-family: var(--second-font);
+    font-size: 18px;
+    color: var(--fourth-color);
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.grafika1 p:hover, .grafika2 p:hover {
+    color: var(--second-color);
+}
+
+.grafika1-1, .grafika1-2, .grafika2-1, .grafika2-2, .grafika2-3 {
+    margin-left: 60px;
+    margin-right: 60px;
+}

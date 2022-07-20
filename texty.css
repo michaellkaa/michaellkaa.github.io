@@ -1,0 +1,219 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--first-color);
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.loader img {
+    width: 20px;
+    height: auto;
+
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+    
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.portfolio-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.portfolio-icon:hover {
+    color: var(--third-color);
+}
+
+.sloh1 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.dopis-v-lahvi {
+    padding: 0%;
+    margin: 0%;
+}
+
+.dopis-v-lahvi h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+    padding: 30px 10px 10px 10px;
+    margin: 0%;
+}
+
+.dopis-v-lahvi p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: var(--second-font);
+    color: var(--fourth-color);
+    padding: 30px;
+    margin: 0%;
+}
+
+.dopis-v-lahvi img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+    padding: 0%;
+    margin: 0%;
+}
+
+.dopis-v-lahvi img:hover {
+    border-color: var(--third-color) ;
+    transition: 200ms;
+}
+
+.dopis-v-lahvi a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.sloh2 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.mami h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.mami img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+    padding: 0%;
+    margin: 0%;
+}
+
+.mami img:hover {
+    border-color: var(--third-color) ;
+    transition: 200ms;
+}
+
+.mami a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    
+}
+.mami p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: var(--second-font);
+    color: var(--fourth-color);
+    padding: 30px;
+    margin: 0%;
+}
+.sloh3 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.nevis h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.nevis img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nevis img:hover {
+    border-color: var(--third-color) ;
+    transition: 200ms;
+}
+
+.nevis a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    
+}
+.nevis p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: var(--second-font);
+    color: var(--fourth-color);
+    padding: 30px;
+    margin: 0%;
+}

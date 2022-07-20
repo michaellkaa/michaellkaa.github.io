@@ -1,0 +1,18 @@
+.dark-mode {
+    --first-color: #00071f;
+    --second-color: #f6f2ff;
+    --third-color: #82A6ED;
+    --fourth-color: rgb(200, 200, 200);
+    --first-font:  'Bodoni Moda', serif;
+    --second-font: 'Work Sans', sans-serif;
+}
+
+:root {
+    --first-color: #F3f4FC;
+    --second-color: rgb(9, 9, 9);
+    --third-color: #561790;
+    --fourth-color: rgb(152, 152, 152);
+    --first-font: 'Bodoni Moda', serif;
+    --second-font: 'Work Sans', sans-serif;
+}
+

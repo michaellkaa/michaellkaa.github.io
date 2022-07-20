@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotky</title>
+    <link rel="stylesheet" href="fotky.css">
+    <link rel="stylesheet" href="root.css">
+
+
+
+</head>
+
+
+<body onload="loader()">
+    
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+        <div class="icons">
+            <a href="index.html" class="home-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        
+            <a href="portfolio.html" class="portfolio-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+            </a>
+        
+            <a href="#" class="star-icon" onclick="changeColorMode()">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </a>
+        </div>
+
+
+        <div class="lide">
+            <h3>lidé</h3>
+        <div class="fotka1">
+            <a href="fotky (1).JPG" target="_blank"><img src="fotky (1).JPG" alt=""></a>
+            <br>
+            <p>Postava s rozmazaným pozadím, kontrast s růžovou a červenou.</p>
+        </div>
+        <div class="fotka2">
+            <a href="fotky (3).JPG" target="_blank"> <img src="fotky (3).JPG" alt=""></a>
+            <br>
+            <p>Postava dívajíc se mimo kameru, třetinová kompozice.</p>
+        </div>
+        <div class="fotka3">
+        <a href="fotky (9).JPG" target="_blank"> <img src="fotky (9).JPG" alt=""></a>
+        <p>Zkoušení různých světel, improvizace na veřejných místech.</p>
+        </div>
+        <div class="fotka4">
+        <a href="fotky (6).JPG" target="_blank"> <img src="fotky (6).JPG" alt=""></a>
+        <p>Fotka v pohybu.</p>
+        </div>
+        <div>
+        </div>
+       </div>
+
+    <div class="zvirata">
+        <h3>zvířata</h3>
+        <div class="fotka5">
+            <a href="fotky (2).JPG" target="_blank"><img src="fotky (2).JPG" alt=""></a>
+            <p>Tučňák, zkoušení focení z větší vzdálenosti.</p>
+        </div>
+        <div class="fotka6">
+            <a href="fotky (4).JPG" target="_blank"><img src="fotky (4).JPG" alt=""></a>
+            <p>Focení v Kensingtonských zahradách, objekt v pohybu, z dálky.</p>
+        </div>
+        <div class="fotka7">
+        <a href="fotky (7).JPG" target="_blank"><img src="fotky (7).JPG" alt=""></a>
+        <p> Včela, objekt v pohybu.</p>
+        </div>
+    </div>
+    <div class="ostatni">
+        <h3>ostatní</h3>
+        <div class="fotka8">
+            <a href="fotky (8).JPG"><img src="fotky (8).JPG" alt=""></a>
+            <p>Silueta sochy na střeše Národního divadla.</p>
+        </div>
+        <div class="fotka9">
+            <a href="fotky (5).JPG"><img src="fotky (5).JPG" alt=""></a>
+            <p>Recenzní fotka knihy se skleněným pozadím.</p>
+        </div>
+    </div>
+        
+        <script src="script.js"></script>
+        <script>
+      
+            var timer;
+            function loader() {
+                timer = setTimeout(showPage, 2000);
+            }
+            function showPage() {
+                document.getElementById("load-logo").style.display = "none";
+                
+                document.getElementById("home").style.display = "block";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+        function changeImage () {
+            const logo2 = document.getElementById("load-logo")
+        
+            if (localStorage.getItem("colorMode") == "dark") {
+                logo2.classList.add("invert");
+            } else {
+                logo2.classList.remove("invert");
+            }
+        }
+        
+        changeImage ();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 20px ;
+    padding: 0%;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.card {
+    width: 230px;
+    height: 380px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 170px;
+    margin-right: 70px;
+    margin-left: 70px;
+    filter: brightness(90%);
+}
+
+.card:hover {
+    width: 240px;
+    height: 390px;
+    transition: 400ms;
+    
+}
+
+.card:hover #icon1, .card:hover #icon2, .card:hover #icon3,  .card:hover #icon4 {
+    font-size: 100px;
+    transition: 600ms;
+}
+
+.card:hover h2 {
+    padding-top: 5px;
+}
+
+.card h2 {
+    color: var(--first-color);
+    padding-top: 35px;
+}
+
+.card .web {
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1.5px;
+}
+
+.card .foto {
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.card .grafika {
+    font-family: 'Comic Neue', cursive;
+    letter-spacing: 0.75px;
+}
+
+.card .texty {
+    font-family: 'Ibarra Real Nova', serif;
+    letter-spacing: 2px;
+}
+
+.card:hover .web, .card:hover .foto, .card:hover .grafika, .card:hover .texty  {
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+.card p {
+    color: var(--fourth-color);
+}
+
+.card .btn {
+    background-color: var(--third-color);
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    font-family: var(--second-font);
+
+}
+
+.card .btn a {
+    color: var(--first-color);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    
+}
+
+
+.card button:hover {
+    background-color: var(--fourth-color);
+}
+
+.card #icon1, .card #icon2, .card #icon3, .card #icon4 {
+    font-size: 70px;
+    padding-top: 80px;
+    color: var(--first-color);
+}
+
+.card p {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+}

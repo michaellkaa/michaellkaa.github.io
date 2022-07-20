@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 20px ;
+    padding: 0%;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.portfolio-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.portfolio-icon:hover {
+    color: var(--third-color);
+}
+
+.lide h3, .zvirata h3, .ostatni h3 {
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--first-font);
+    color: var(--second-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.fotka1, .fotka2, .fotka3, .fotka4, .fotka5, .fotka6, .fotka7, .fotka8, .fotka9 {
+    padding: 20px;
+}
+
+.fotka1 img, .fotka2 img, .fotka3 img, .fotka4 img, .fotka5 img, .fotka6 img, .fotka7 img, .fotka8 img, .fotka9 img {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--fourth-color) ;
+}
+
+.fotka1 img:hover, .fotka2 img:hover, .fotka3 img:hover, .fotka4 img:hover, .fotka5 img:hover, .fotka6 img:hover, .fotka7 img:hover, .fotka8 img:hover, .fotka9 img:hover {
+    border-color: var(--third-color);
+    transition: 200ms;
+}
+
+.fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p {
+    font-family: var(--second-font);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--fourth-color);
+}
+
+.fotka1 p:hover, .fotka2 p:hover, .fotka3 p:hover, .fotka4 p:hover, .fotka5 p:hover, .fotka6 p:hover, .fotka7 p:hover, .fotka8 p:hover, .fotka9 p:hover {
+    color: var(--second-color);
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webovky</title>
+    <link rel="stylesheet" href="webovky.css">
+    <link rel="stylesheet" href="root.css">
+
+
+
+</head>
+
+
+<body onload="loader()">
+    
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+
+        <div class="icons">
+            <a href="index.html" class="home-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        
+            <a href="portfolio.html" class="portfolio-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+            </a>
+        
+            <a href="#" class="star-icon" onclick="changeColorMode()">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </a>
+        </div>
+
+        <div class="webovky">
+         <div class="pic1">
+             <a href="webovky (1).png" target="_blank"><img src="webovky (1).png" alt=""></a>
+            <ul>
+                <li class="text1">úvodní stránka</li>
+                <li>práce s listy</li>
+                <li>gradienty</li>
+                <li>zarovnání textu</li> 
+            </ul>
+         </div>
+
+         <div class="pic2">
+             <a href="webovky (2).png" target="_blank"><img src="webovky (2).png" alt=""></a>
+            <ul>
+                <li class="text2">osobní portfolio - stránka o mně</li>
+                <li>fotka, zarovná textu okolo</li>
+                <li>hover, button - linked</li>
+                <li>link s jinou barvou než je zbylý text</li>
+            </ul>
+         </div>
+
+         <div class="pic3">
+             <a href="webovky (3).png" target="_blank">
+                <img src="webovky (3).png" alt="">
+            </a>
+            <ul>
+                <li class="text3">osobní portfolio - obrázky</li>
+                <li> width a height fotek</li>
+                <li>velikost písma</li>
+                
+            </ul>
+         </div>
+
+         <div class="pic4">
+            <a href="webovky (4).png" target="_blank">
+               <img src="webovky (4).png" alt="">
+           </a>
+           <ul>
+               <li class="text4">kontaktní informace</li>
+               <li> link - email, instagram a jiné</li>
+               <li>velikost a barva písma</li>
+               
+           </ul>
+        </div>
+        </div>
+
+
+
+<script src="script.js"></script>
+
+  <script>
+  
+    var timer;
+    function loader() {
+        timer = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+        document.getElementById("load-logo").style.display = "none";
+        
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>function changeImage () {
+    
+
+    const logo2 = document.getElementById("load-logo")
+
+    if (localStorage.getItem("colorMode") == "dark") {
+        logo2.classList.add("invert");
+    } else {
+        logo2.classList.remove("invert");
+    }
+
+}
+
+changeImage ();</script>
+<script>function setColorMode() {
+    var elementBody = document.body;
+    
+    if (localStorage.getItem("colorMode") == "dark") {
+        elementBody.classList.add("dark-mode");
+    } else {
+        elementBody.classList.remove("dark-mode");
+    }
+
+
+
+};
+
+
+function changeColorMode () {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("colorMode", "dark");
+    } else {
+        localStorage.setItem("colorMode", "light");
+    }
+
+    console.log(localStorage.getItem("colorMode")); 
+};
+
+
+
+setColorMode();</script>
+</body>
+</html>

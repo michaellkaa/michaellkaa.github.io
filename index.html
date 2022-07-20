@@ -1,1 +1,123 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home <3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="icon" href="home.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+<body onload="loader()">
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+    <header>
+    
+    <div class="navigace">
+    
+<nav>
+    
+    <img src="logo-black_b.png" id="logo" class="invert">
+    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="#kontakt">contact</a>
+</nav>
+</div >
+
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="#kontakt">contact</a>
+</div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
+
+<div class="introduce" >
+<h1>Michaelka</h1>
+<p>vývojář a grafik</p>
+</div>
+
+<div class="about" >
+
+<h4 id="about">ABOUT</h4>
+<span class="span about">
+<p> Jsem Michaela Ptáčková, je mi 14 let a hlásím se na Creative Hill College. Mým cílem je obor Multimédia a grafický design, ale chci pokračovat i v tvorbě webových stránek, se kterou jsem začala začátkem roku 2022.</p> 
+<p>Mimo tvorbu webovek se zajímám o umění, což zahrnuje grafický design, hudbu, hru na klávesy, flétnu a kytaru, a taky knihy a poezii.</p>
+
+<h6>Škola</h6>
+<p>Ohledně volného času v rámci školy dělám olympiády z češtiny, angličtiny, fyziky, matematiky, chemie a taky dělám literární soutěže.</p>
+<p>Také mám v plánu psát knihu na téma lgbt, blm a suicide awarness.</p>
+
+<h6>Influence</h6>
+<p>Mými největšími vzory ohledně umění jsou lidi z okolí, lidé se kterými si můžu promluvit o daném tématu.
+Také se ale inspiruji na sociálních sítích jako je twitter, instagram a jiné.
+</p>
+<p >Pokud vás zajímají mé práce tak je najdete v mém <a class="text-portfolio" href="portfolio.html">portfoliu</a>.</p>
+
+</span>
+</div>
+<div class="kontakt" id="kontakt">
+    <footer>
+        <a href="mailto:michaela.ptackova.mp@gmail.com" ><ion-icon name="mail-outline" class="mail" ></ion-icon></a>
+        <a href="http://www.instagram.com/michaelka.__/" target="_blank" > <ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+        <p>@Michaelka 2022</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+
+  <script>
+  
+    var timer;
+    function loader() {
+        timer = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+        document.getElementById("load-logo").style.display = "none";
+        
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script> 
+function changeImage() {
+const logo3 = document.getElementById("mobile-logo")
+    
+    if (localStorage.getItem("colorMode") == "dark") {
+        logo3.classList.remove("invert");
+    } else {
+        logo3.classList.add("invert");
+    }
+}
+
+changeImage ();</script>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>
