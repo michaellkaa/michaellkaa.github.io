@@ -66,12 +66,12 @@ body {
     color: var(--third-color);
 }
 
-.mojelogo, .postavy {
+.mojelogo, .postavy, .infografika, .logo, .webovky, .emoji {
     padding: 20px;
     text-align: center;
 }
 
-.mojelogo h4, .postavy h4 {
+.mojelogo h4, .postavy h4, .infografika h4, .logo h4, .webovky h4, .emoji h4 {
     font-size: 50px;
     color: var(--second-color);
     padding: 20px;
@@ -82,7 +82,7 @@ body {
 
 
 
-.grafika1, .grafika2 {
+.grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7 {
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -90,7 +90,7 @@ body {
     margin: 0%;
 }
 
-.grafika1 img, .grafika2 img {
+.grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {
     width: auto;
     height: 200px;
     transition: 200ms;
@@ -101,11 +101,11 @@ body {
     border-color: var(--fourth-color);
 }    
 
-.grafika1 img:hover, .grafika2 img:hover {
+.grafika1 img:hover, .grafika2 img:hover, .grafika3 img:hover, .grafika4 img:hover, .grafika5 img:hover, .grafika6 img:hover, .grafika7 img:hover {
     border-color: var(--third-color);
 }
 
-.grafika1 p, .grafika2 p {
+.grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {
     font-family: var(--second-font);
     font-size: 18px;
     color: var(--fourth-color);
@@ -114,11 +114,15 @@ body {
     text-transform: uppercase;
 }
 
-.grafika1 p:hover, .grafika2 p:hover {
+.grafika1 p:hover, .grafika2 p:hover, .grafika3 p:hover, .grafika4 p:hover, .grafika5 p:hover, .grafika6 p:hover, .grafika7 p:hover  {
     color: var(--second-color);
 }
 
-.grafika1-1, .grafika1-2, .grafika2-1, .grafika2-2, .grafika2-3 {
-    margin-left: 60px;
-    margin-right: 60px;
+.grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.grafika7 p {
+    margin-bottom: 100px;
 }
