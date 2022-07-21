@@ -180,8 +180,6 @@ text-align: right;}
 
 .about p {
     font-family: var(--second-font);
-    /*margin-top: 310px;*/
-    /*margin-left: 30vw;*/
     font-size: 18px;
     color: var(--second-color);
     text-align: center;
@@ -226,18 +224,15 @@ footer {
     opacity: 30%;
 }
 
-@media screen and (max-width: 1040px ) {
-    .about p {font-size: 14px;}
-}
+/*@media screen and (max-width: 1040px ) {
+}*/
 
 @media screen and (max-width: 915px) {
-    .about p {font-size: 14px;}
     .about {padding: 20px 290px 0 290px;}
-    
 }
 
 @media screen and (max-width: 810px) {
-    .about p {font-size: 10px;}
+    
     .introduce h1 {font-size: 135px;}
     .introduce p {font-size: 30px;}
     .about {padding: 20px 280px 0 280px;}
@@ -329,119 +324,96 @@ footer {
  
 
 @media screen and (max-width: 505px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 12px;}
     .introduce h1 {font-size: 95px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 150px 0 150px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 60px;}*/
     .kontakt {font-size: 12px;}
     .kontakt a:hover {font-size: 12px;}
 }
 
 @media screen and (max-width: 450px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 12px;}
     .introduce h1 {font-size: 85px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 130px 0 130px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 55px;}*/
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
     .about h4 {font-size: 40px;}
 }
 
 @media screen and (max-width: 420px) {
-    .about p {font-size: 10px;}
-    .introduce h1 {font-size: 85px;}
-    .introduce p {font-size: 25px;}
-    .about {padding: 20px 100px 0 100px;
+    .about p {font-size: 12px; }
+    .introduce h1 {font-size: 75px;}
+    .introduce p {font-size: 25px; }
+    .about {padding: 20px 90px 0 90px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 40px;}*/
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
     .about h4 {font-size: 40px;}
 }
 
 @media screen and (max-width: 385px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 12px;}
     .introduce h1 {font-size: 70px;}
-    .introduce p {font-size: 25px;}
-    .about {padding: 20px 100px 0 100px;
-    text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 30px;}*/
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
     .about h4 {font-size: 40px;}
 }
 
 @media screen and (max-width: 330px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 60px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 90px 0 90px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 25px;}*/
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
     .about h4 {font-size: 40px;}
 }
 
 @media screen and (max-width: 300px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 55px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 80px 0 80px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 20px;}*/
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
     .about h4 {font-size: 30px;}
 }
 
 @media screen and (max-width: 279px) {
-    .about p {font-size: 10px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 55px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 70px 0 70px;
     text-align: center;}
-    /*.navigace {font-size: 10px;
-    word-spacing: 12px;}*/
     .kontakt {font-size: 8px;}
     .kontakt a:hover {font-size: 8px;}
     .about h4 {font-size: 30px;}
 }
 
 @media screen and (max-width: 250px) {
-    .about p {font-size: 8px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 40px;}
     .introduce p {font-size: 20px;}
     .about {padding: 20px 30px 0 30px;
     text-align: center;}
-    /*.navigace {font-size: 8px;
-    word-spacing: 8px;}*/
     .kontakt {font-size: 8px;}
     .kontakt a:hover {font-size: 8px;}
     .about h4 {font-size: 25px;}
     .about h6 {font-size: 20px;}
-    .about p {font-size: 10px;}
-    /*#logo {width: 40px; height: auto;}*/
 }
 
 @media screen and (max-width: 210px) {
-    .about p {font-size: 8px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 40px;}
     .introduce p {font-size: 20px;}
     .about {padding: 20px 40px 0 40px;
     text-align: center;}
-    /*.navigace {font-size: 7px;
-    word-spacing: 5px;}*/
     .kontakt {font-size: 8px;}
     .kontakt a:hover {font-size: 8px;}
     .about h4 {font-size: 25px;}
@@ -450,14 +422,11 @@ footer {
 }
 
 @media screen and (max-width: 185px) {
-    .about p {font-size: 8px;}
+    .about p {font-size: 14px;}
     .introduce h1 {font-size: 33px;}
     .introduce p {font-size: 17px;}
     .about {padding: 20px 20px 0 20px;
     text-align: center;}
-    /*.navigace {font-size: 6px;
-    word-spacing: 5px;}
-    #logo {width: 35px; height: auto;}*/
     .kontakt {font-size: 9.5px;}
     .kontakt a:hover {font-size: 9.5px;}
     .about h4 {font-size: 25px;}

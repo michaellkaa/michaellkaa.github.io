@@ -37,49 +37,28 @@ body {
     margin-top: 20px;
 }
 
-.star-icon {
-    color: var(--second-color);
-    padding: 12px;
-}
-
-.star-icon:hover {
-    color: var(--third-color);
-}
-
-.home-icon {
+.star-icon, .home-icon, .portfolio-icon {
     color: var(--second-color);
     padding: 12px;
     text-decoration: none;
 }
 
-.home-icon:hover {
+.star-icon:hover, .home-icon:hover, .portfolio-icon:hover {
     color: var(--third-color);
 }
 
-.portfolio-icon {
-    color: var(--second-color);
-    padding: 12px;
-    text-decoration: none;
-}
-
-.portfolio-icon:hover {
-    color: var(--third-color);
-}
-
-.sloh1 {
+.sloh1, .sloh2, .sloh3 {
     display: flex;
     justify-content: center ;
     align-items: center;
+}
+
+.dopis-v-lahvi, .mami, .nevis {
     padding: 0%;
     margin: 0%;
 }
 
-.dopis-v-lahvi {
-    padding: 0%;
-    margin: 0%;
-}
-
-.dopis-v-lahvi h4 {
+.dopis-v-lahvi h4, .mami h4, .nevis h4 {
     text-align: center;
     font-size: 35px;
     font-family: var(--first-font);
@@ -89,7 +68,7 @@ body {
     margin: 0%;
 }
 
-.dopis-v-lahvi p {
+.dopis-v-lahvi p, .mami p, .nevis p {
     text-align: center;
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -99,7 +78,7 @@ body {
     margin: 0%;
 }
 
-.dopis-v-lahvi img {
+.dopis-v-lahvi img, .mami img, .nevis img {
     height: auto;
     width: 300px;
     border-radius: 15px;
@@ -110,12 +89,12 @@ body {
     margin: 0%;
 }
 
-.dopis-v-lahvi img:hover {
+.dopis-v-lahvi img:hover, .mami img:hover, .nevis img:hover {
     border-color: var(--third-color) ;
     transition: 200ms;
 }
 
-.dopis-v-lahvi a {
+.dopis-v-lahvi a, .mami a, .nevis a {
     text-decoration: none;
     text-align: center;
     padding-left: 40px;
@@ -123,97 +102,34 @@ body {
     padding-bottom: 50px;
 }
 
-.sloh2 {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
+
+@media screen and (max-width: 1320px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 140px; margin-right: 140px;}
+    .dopis-v-lahvi img, .mami img, .nevis img { width: 270px; height: auto;}
 }
 
-.mami h4 {
-    text-align: center;
-    font-size: 35px;
-    font-family: var(--first-font);
-    text-transform: uppercase;
-    color: var(--second-color);
+@media screen and (max-width: 1140px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 180px; margin-right: 180px;}
+    .dopis-v-lahvi img, .mami img, .nevis img { width: 220px; height: auto;}
 }
 
-.mami img {
-    height: auto;
-    width: 300px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--second-color) ;
-    padding: 0%;
-    margin: 0%;
+@media screen and (max-width: 1000px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 180px; margin-right: 180px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
 }
 
-.mami img:hover {
-    border-color: var(--third-color) ;
-    transition: 200ms;
+@media screen and (max-width: 790px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 150px; margin-right: 150px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
 }
 
-.mami a {
-    text-decoration: none;
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 50px;
-    
-}
-.mami p {
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    font-family: var(--second-font);
-    color: var(--fourth-color);
-    padding: 30px;
-    margin: 0%;
-}
-.sloh3 {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
+@media screen and (max-width: 550px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 80px; margin-right: 80px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
 }
 
-.nevis h4 {
-    text-align: center;
-    font-size: 35px;
-    font-family: var(--first-font);
-    text-transform: uppercase;
-    color: var(--second-color);
-}
-
-.nevis img {
-    height: auto;
-    width: 300px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--second-color) ;
-    padding: 0%;
-    margin: 0%;
-}
-
-.nevis img:hover {
-    border-color: var(--third-color) ;
-    transition: 200ms;
-}
-
-.nevis a {
-    text-decoration: none;
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 50px;
-    
-}
-.nevis p {
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    font-family: var(--second-font);
-    color: var(--fourth-color);
-    padding: 30px;
-    margin: 0%;
+@media screen and (max-width: 375px){
+    .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 60px; margin-right: 60px;}
+    .sloh1, .sloh2, .sloh3 {display: grid;}
+    .dopis-v-lahvi h4, .mami h4, .nevis h4 {font-size: 30px;}
 }

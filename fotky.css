@@ -57,6 +57,12 @@ body {
     color: var(--third-color);
 }
 
+.lide, .zvirata, .ostatni {
+    display: grid;
+    justify-content: center ;
+    align-items: center;
+}
+
 .lide h3, .zvirata h3, .ostatni h3 {
     font-size: 50px;
     text-align: center;
@@ -96,3 +102,18 @@ body {
     color: var(--second-color);
 }
 
+@media screen and (max-width: 695px){
+    .fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}
+    .fotka1 img, .fotka2 img, .fotka3 img, .fotka4 img, .fotka5 img, .fotka6 img, .fotka7 img, .fotka8 img, .fotka9 img {height: 250px; width: auto;}
+}
+
+@media screen and (max-width: 570px){
+    .fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}
+    .fotka1 img, .fotka2 img, .fotka3 img, .fotka4 img, .fotka5 img, .fotka6 img, .fotka7 img, .fotka8 img, .fotka9 img {height: 200px; width: auto;}
+}
+
+@media screen and (max-width: 390px){
+    .fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}
+    .fotka1 img, .fotka2 img, .fotka3 img, .fotka4 img, .fotka5 img, .fotka6 img, .fotka7 img, .fotka8 img, .fotka9 img {height: 160px; width: auto;}
+    .lide h3, .zvirata h3, .ostatni h3 {font-size: 40px;}
+}
