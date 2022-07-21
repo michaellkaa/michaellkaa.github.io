@@ -9,11 +9,12 @@ body {
 }
 
 #load-logo {
-    position: absolute;
-    top: 34%;
-    left: 38%;
-    height: 250px;
-    width: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  margin-top: 16em;
+  width: 30%;
 }
 
 .invert {
