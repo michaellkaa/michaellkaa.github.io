@@ -226,12 +226,6 @@ footer {
     opacity: 30%;
 }
 
-@media screen and (max-width: 6000px ) {
-    .open-mobile-nav {display: none;}
-    .navigace {display: block};
-    .open {display: none;}
-}
-
 @media screen and (max-width: 1040px ) {
     .about p {font-size: 14px;}
 }
@@ -311,13 +305,26 @@ footer {
 
 /*mobile nav*/
 
+@media screen and (min-width: 550px) {
+    .navigace {display: block;}
+    .mobile-nav {display: none;
+        padding-top: 15px;}
+    
+    .open {display: none;}
+    .open-mobile-nav {display: none;}
+    .header2 {display:none;}
+    .header1 { display: block;}
+}
+
 @media screen and (max-width: 550px) {
     .navigace {display: none;}
-    .mobile-nav {display: block;}
-    .mobile-nav {padding-top: 15px;}
+    .mobile-nav {display: block;
+        padding-top: 15px;}
     .mobile-nav a {font-size: 18px;}
     .open {display: block;}
     .open-mobile-nav {display: block;}
+    .header1 {display: none;}
+    .header2 { display: block;}
 }
  
 
