@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 20px ;
+    padding: 0%;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.kontakt h2 {
+     font-family: var(--first-font);
+     color: var(--second-color);
+     font-size: 40px;
+     font-weight: 500;
+     text-transform: uppercase;
+     margin: 60px;
+}
+
+.kontakt h4 {
+    font-family: var(--first-font);
+     color: var(--second-color);
+     font-size: 20px;
+     font-weight: 400;
+     text-transform: uppercase;
+     letter-spacing: 0.3px;
+     margin: 30px;
+}
+
+.kontakt a {
+     font-weight: 600;
+     font-family: var(--second-font);
+     text-decoration: none;
+     color: var(--third-color);
+     transition: 400ms;
+     letter-spacing: 0.6px;
+     padding: 44px;
+     margin: 10px;
+}
+
+.kontakt a:hover {
+    color: var(--fourth-color);
+}
+
+.kontakt p {
+    color: var(--fourth-color);
+    font-family: var(--second-font);
+    font-weight: 400;
+    margin-bottom: 45px;
+    letter-spacing: 0.35px;
+}
