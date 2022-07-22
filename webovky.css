@@ -240,14 +240,14 @@ body {
 }
 
 @media screen and (max-width: 960px){
-    .pic1, .pic2, .pic3, .pic4 {display: grid; align-items: center; justify-content: center; text-align: center; margin: 0%; float: none; clear: none; }
-    .pic1 li, .pic2 li, .pic3 li, .pic4 li { padding-left:0%; padding-right: 0%; padding-bottom: 10px;}
-    .pic1 ul, .pic2 ul, .pic3 ul, .pic4 ul { text-align: center; color: var(--second-color);}
+    .pic1, .pic2, .pic3, .pic4 {display: grid; align-items: center; justify-content: center; text-align: center; margin: 0%; float: none; clear: none; padding: 0%; }
+    .pic1 li, .pic2 li, .pic3 li, .pic4 li { padding-left:0%; padding-right: 0%; padding-bottom: 10px; text-align: center;}
+    .pic1 ul, .pic2 ul, .pic3 ul, .pic4 ul { text-align: center; color: var(--second-color); padding: 0%; margin: 0%;}
     .pic1 img, .pic2 img, .pic3 img , .pic4 img {border-color: var(--third-color); margin: 0%;}
     .pic1, .pic2, .pic3 {padding: 50px;}
 }
 
 @media screen and (max-width: 476px){
     .pic1 img, .pic2 img, .pic3 img {width: 300px; height: auto;}
-    .pic4 img { width: 200px; height: auto;}
+    .pic4 img { width: 260px; height: auto;}
 }
