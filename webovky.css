@@ -66,8 +66,19 @@ body {
     color: var(--third-color);
 }
 
+.firstweb h2 {
+    font-size: 38px;
+    text-align: center;
+    margin: 50px;
+    font-family: var(--first-font);
+    color: var(--second-color);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
 .pic1 {
-    padding: 100px;
+    padding: 20px 100px 100px 100px;
+    
 }
 
 .pic1 img {
@@ -78,13 +89,14 @@ body {
     border-radius: 10px;
     border: solid;
     border-color: var(--fourth-color);
+    transition: 1s;
 }
 
 
 
 .pic1 img:hover, .pic1 ul:hover {
     border-color: var(--third-color);
-    transition: 200ms;
+    transition: 1s;
     color: var(--second-color);
 }
 
@@ -92,16 +104,16 @@ body {
     color: var(--fourth-color);
     font-family: var(--second-font);
     font-size: 16px;
-    font-weight: 400;
     clear: right;
    list-style-type: none;
    text-transform: uppercase;
    letter-spacing: 0.4px;
+   transition: 1s;
 }
 
 .pic1 .text1{
     font-size: 23px;
-    font-family: var(--first-font);
+    font-family: var(--second-font);
 }
 
 .pic1 li {
@@ -121,11 +133,12 @@ body {
     border-radius: 10px;
     border: solid;
     border-color: var(--fourth-color);
+    transition: 1s;
 }
 
 .pic2 img:hover, .pic2 ul:hover {
     border-color: var(--third-color);
-    transition: 200ms;
+    transition: 1s;
     color: var(--second-color);
 }
 
@@ -133,17 +146,17 @@ body {
     color: var(--fourth-color);
     font-family: var(--second-font);
     font-size: 16px;
-    font-weight: 400;
     clear: left;
    list-style-type: none;
    text-align: right;
    text-transform: uppercase;
    letter-spacing: 0.4px;
+   transition: 1s;
 }
 
 .pic2 .text2 {
     font-size: 23px;
-    font-family: var(--first-font);
+    font-family: var(--second-font);
 }
 
 .pic2 li {
@@ -163,11 +176,12 @@ body {
     border-radius: 10px;
     border: solid;
     border-color: var(--fourth-color);
+    transition: 1s;
 }
 
 .pic3 img:hover, .pic3 ul:hover {
     border-color: var(--third-color);
-    transition: 200ms;
+    transition: 1s;
     color: var(--second-color);
 }
 
@@ -175,16 +189,16 @@ body {
     color: var(--fourth-color);
     font-family: var(--second-font);
     font-size: 16px;
-    font-weight: 400;
     clear: right;
    list-style-type: none;
    text-transform: uppercase;
    letter-spacing: 0.4px;
+   transition: 1s;
 }
 
 .pic3 .text3 {
     font-size: 23px;
-    font-family: var(--first-font);
+    font-family: var(--second-font);
 }
 
 .pic3 li {
@@ -205,11 +219,12 @@ body {
     border: solid;
     border-color: var(--fourth-color);
     margin-bottom: 100px;
+    transition: 1s;
 }
 
 .pic4 img:hover, .pic4 ul:hover {
     border-color: var(--third-color);
-    transition: 200ms;
+    transition: 1s;
     color: var(--second-color);
 }
 
@@ -217,21 +232,26 @@ body {
     color: var(--fourth-color);
     font-family: var(--second-font);
     font-size: 16px;
-    font-weight: 400;
     clear: left;
    list-style-type: none;
    text-align: right;
    text-transform: uppercase;
    letter-spacing: 0.4px;
+   transition: 1s;
 }
 
 .pic4 .text4 {
     font-size: 23px;
-    font-family: var(--first-font);
+    font-family: var(--second-font);
 }
 .pic4 li {
     padding: 10px;
 
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
 }
 
 @media screen and (max-width: 1028px){
@@ -245,6 +265,11 @@ body {
     .pic1 ul, .pic2 ul, .pic3 ul, .pic4 ul { text-align: center; color: var(--second-color); padding: 0%; margin: 0%;}
     .pic1 img, .pic2 img, .pic3 img , .pic4 img {border-color: var(--third-color); margin: 0%;}
     .pic1, .pic2, .pic3 {padding: 50px;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
 
 @media screen and (max-width: 476px){

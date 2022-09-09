@@ -35,40 +35,48 @@ body {
     margin-left: 0%;
     margin-right: 20px;
     margin-top: 20px;
+    transition: 0.5s;
 }
 
 .star-icon {
     color: var(--second-color);
     padding: 12px;
+    transition: 0.5s;
 }
 
 .star-icon:hover {
     color: var(--third-color);
+    transition: 0.5s;
 }
 
 .home-icon {
     color: var(--second-color);
     padding: 12px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .home-icon:hover {
     color: var(--third-color);
+    transition: 0.5s;
 }
 
 .portfolio-icon {
     color: var(--second-color);
     padding: 12px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .portfolio-icon:hover {
     color: var(--third-color);
+    transition: 0.5s;
 }
 
 .mojelogo, .postavy, .infografika, .logo, .webovky, .emoji {
     padding: 20px;
     text-align: center;
+    transition: 0.5s;
 }
 
 .mojelogo h4, .postavy h4, .infografika h4, .logo h4, .webovky h4, .emoji h4 {
@@ -78,90 +86,122 @@ body {
     font-family: var(--first-font);
     text-transform: uppercase;
     font-weight: 400;
+    transition: 0.5s;
 }
 
 
 
-.grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7 {
+.grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7, .grafika8 {
     display: flex;
     justify-content: center ;
     align-items: center;
     padding: 0%;
     margin: 0%;
+    transition: 0.5s;
 }
 
-.grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {
+.grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img , .grafika8 img {
     width: auto;
     height: 200px;
-    transition: 200ms;
     border-style: solid;
     border-radius: 15px;
     border-width: 3px;
     margin-bottom: 25px;
     border-color: var(--fourth-color);
+    transition: 0.5s;
+    
 }    
 
-.grafika1 img:hover, .grafika2 img:hover, .grafika3 img:hover, .grafika4 img:hover, .grafika5 img:hover, .grafika6 img:hover, .grafika7 img:hover {
-    border-color: var(--third-color);
+.grafika8-1 a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--second-color);
 }
 
-.grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {
+.grafika8-1 a:hover {
+    color: var(--third-color);
+}
+
+.grafika8-1 a:active{
+    color: var(--third-color);
+}
+
+.grafika1 img:hover, .grafika2 img:hover, .grafika3 img:hover, .grafika4 img:hover, .grafika5 img:hover, .grafika6 img:hover, .grafika7 img:hover, .grafika8 img:hover {
+    border-color: var(--third-color);
+    transition: 0.5s;
+}
+
+.grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p, .grafika8 p {
     font-family: var(--second-font);
     font-size: 18px;
     color: var(--fourth-color);
     margin-bottom: 30px;
     font-weight: 400;
+    transition: 0.5s;
     text-transform: uppercase;
 }
 
-.grafika1 p:hover, .grafika2 p:hover, .grafika3 p:hover, .grafika4 p:hover, .grafika5 p:hover, .grafika6 p:hover, .grafika7 p:hover  {
+.grafika1 p:hover, .grafika2 p:hover, .grafika3 p:hover, .grafika4 p:hover, .grafika5 p:hover, .grafika6 p:hover, .grafika7 p:hover, .grafika8 p:hover  {
     color: var(--second-color);
+    transition: 0.5s;
 }
 
-.grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img {
+.grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img, .grafika8-1 img, .grafika8-2 img, .grafika8-3 img {
     margin-left: 90px;
     margin-right: 90px;
+    transition: 0.5s;
 }
 
 .grafika7 p {
     margin-bottom: 100px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
 }
 
 @media screen and (max-width: 1850px){ 
-    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {width: auto; height: 150px;}    
+    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img, .grafika8 img {width: auto; height: 150px;}    
 }
 
 @media screen and (max-width: 1630px){ 
-    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {width: auto; height: 120px; }    
+    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img, .grafika8 img {width: auto; height: 120px; }    
     .mojelogo, .postavy, .infografika, .logo, .webovky, .emoji { padding: 0%; text-align: center;}
     .mojelogo h4, .postavy h4, .infografika h4, .logo h4, .webovky h4, .emoji h4 {padding: 5px;}
 }
 
 @media screen and (max-width: 1310px){ 
-    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img {
+    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img, .grafika8-1 img, .grafika8-2 img, .grafika8-3 img {
         margin-left: 50px; margin-right: 50px;}
-    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {
+    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p, .grafika8 {
         font-size: 12px;margin: 10px;
     }
 }
 
 @media screen and (max-width: 1075px){ 
-    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img {
+    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img, .grafika8-1 img, .grafika8-2 img, .grafika8-3 img {
         margin-left: 30px; margin-right: 30px;}
-    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {font-size: 12px;margin-left: 25px; margin-right: 25px;}
+    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p, .grafika8 p {font-size: 12px;margin-left: 25px; margin-right: 25px;}
 }
 
 @media screen and (max-width: 990px){ 
-    .grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7 { display: flex;}
-    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {width: auto; height: 100px; }    
+    .grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7, .grafika8 { display: flex;}
+    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img, .grafika8 img {width: auto; height: 100px; }    
     .mojelogo h4, .postavy h4, .infografika h4, .logo h4, .webovky h4, .emoji h4 {margin: 25px; font-size: 35px;}
-    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {font-size: 12px;margin-left: 10px; margin-right:10px; }
-    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img {margin-left: 20px;margin-right: 20px; }
+    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p, .grafika8 p {font-size: 12px;margin-left: 10px; margin-right:10px; }
+    .grafika1-1 img, .grafika1-2 img, .grafika2-1 img, .grafika2-2 img, .grafika2-3 img, .grafika3-1 img, .grafika4-1 img, .grafika4-2 img, .grafika5-1 img, .grafika5-2 img, .grafika5-3 img, .grafika6-1 img, .grafika6-2 img, .grafika6-3 img, .grafika6-4 img, .grafika7-1 img, .grafika7-2 img, .grafika7-3 img, .grafika8-1 img, .grafika8-2 img, .grafika8-3 img {margin-left: 20px;margin-right: 20px; }
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
 
 @media screen and (max-width: 420px){ 
-    .grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7 { display: grid;}
-    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img {width: auto; height: 140px; }    
+    .grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7, .grafika8 { display: grid;}
+    .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img, .grafika8 img {width: auto; height: 140px; }    
     .mojelogo h4, .postavy h4, .infografika h4, .logo h4, .webovky h4, .emoji h4 {margin: 25px; font-size: 25px;}
-    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p {font-size: 12px;margin-left: 35px; margin-right: 35px; color: var(--second-color);}
+    .grafika1 p, .grafika2 p, .grafika3 p, .grafika4 p, .grafika5 p, .grafika6 p, .grafika7 p, .grafika8 p {font-size: 12px;margin-left: 35px; margin-right: 35px; color: var(--second-color);}
 }

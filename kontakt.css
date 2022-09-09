@@ -26,32 +26,37 @@ body {
     font-size: 30px;
     margin-left: 0%;
     margin-right: 20px;
+    transition: 0.5s;
 }
 
 .star-icon {
     color: var(--second-color);
     padding: 12px;
+    transition: 0.5s;
 }
 
 .star-icon:hover {
     color: var(--third-color);
+    transition: 0.5s;
 }
 
 .home-icon {
     color: var(--second-color);
     padding: 12px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .home-icon:hover {
     color: var(--third-color);
+    transition: 0.5s;
 }
 
 .kontakt h2 {
      font-family: var(--first-font);
      color: var(--second-color);
      font-size: 40px;
-     font-weight: 500;
+     font-weight: 800;
      text-transform: uppercase;
      margin: 60px;
 }
@@ -59,10 +64,10 @@ body {
 .kontakt h4 {
     font-family: var(--first-font);
      color: var(--second-color);
-     font-size: 20px;
-     font-weight: 400;
+     font-size: 28px;
+     font-weight: 600;
      text-transform: uppercase;
-     letter-spacing: 0.3px;
+     letter-spacing: 0.6px;
      margin: 30px;
 }
 
@@ -71,7 +76,7 @@ body {
      font-family: var(--second-font);
      text-decoration: none;
      color: var(--third-color);
-     transition: 400ms;
+     transition: 0.5s;
      letter-spacing: 0.6px;
      padding: 44px;
      margin: 10px;
@@ -91,4 +96,14 @@ body {
 
 .posledni p {
     margin-bottom: 150px;
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }

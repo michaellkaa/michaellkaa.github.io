@@ -55,7 +55,7 @@ header {
     backdrop-filter: blur(6px);
     /*background-color: rgb(158, 97, 215);*/
     background: transparent;
-    
+    font-weight: 400;
 }
 
 
@@ -91,7 +91,7 @@ header {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    font-weight: 600;
+    font-weight: 400;
 }
   
 .mobile-nav a {
@@ -140,6 +140,7 @@ text-align: right;}
     padding-top: 100px;
     font-family: var(--first-font);
     letter-spacing: 1.2px;
+    font-weight: 600;
 }
 
 .introduce p {
@@ -148,7 +149,7 @@ text-align: right;}
     color: var(--second-color);
     font-family: var(--second-font);
     letter-spacing: 1.5px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .about{
@@ -184,7 +185,7 @@ text-align: right;}
     color: var(--second-color);
     text-align: center;
     font-family: var(--second-font);
-   font-weight: 600;
+   font-weight: 400;
     letter-spacing: 1.5px;
     margin: 0%;
     line-height: 30px;
@@ -210,7 +211,7 @@ footer {
     font-size: 25px;
    padding-left: 15px;
    padding-right: 15px;
-   transition: 200ms;
+   transition: 0.7s;
 }
 
 .kontakt .mail:hover, .kontakt .instagram:hover {
@@ -224,11 +225,15 @@ footer {
     opacity: 30%;
 }
 
-/*@media screen and (max-width: 1040px ) {
-}*/
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
 
 @media screen and (max-width: 915px) {
     .about {padding: 20px 290px 0 290px;}
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
 
 @media screen and (max-width: 810px) {

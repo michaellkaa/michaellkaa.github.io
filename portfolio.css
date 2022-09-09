@@ -25,25 +25,30 @@ body {
     font-size: 30px;
     margin-left: 0%;
     margin-right: 20px;
+    transition: 1s;
 }
 
 .star-icon {
     color: var(--second-color);
     padding: 12px;
+    transition: 1s;
 }
 
 .star-icon:hover {
     color: var(--third-color);
+    transition: 1s;
 }
 
 .home-icon {
     color: var(--second-color);
     padding: 12px;
     text-decoration: none;
+    transition: 1s;
 }
 
 .home-icon:hover {
     color: var(--third-color);
+    transition: 1s;
 }
 
 .card {
@@ -56,57 +61,68 @@ body {
     margin-right: 70px;
     margin-left: 70px;
     filter: brightness(90%);
+    transition: 1s;
 }
 
 .card:hover {
     width: 240px;
     height: 390px;
-    transition: 400ms;
+    transition: 1s;
     
 }
 
 .card:hover #icon1, .card:hover #icon2, .card:hover #icon3,  .card:hover #icon4 {
     font-size: 100px;
-    transition: 600ms;
+    transition: 1s;
 }
 
 .card:hover h2 {
     padding-top: 5px;
+    transition: 1s;
 }
 
 .card h2 {
     color: var(--first-color);
     padding-top: 35px;
+    transition: 1s;
 }
 
 .card .web {
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 1.5px;
+    transition: 1s;
 }
 
 .card .foto {
     font-family: 'Lobster Two', cursive;
     letter-spacing: 1px;
     font-weight: 100;
+    transition: 1s;
 }
 
 .card .grafika {
     font-family: 'Comic Neue', cursive;
     letter-spacing: 0.75px;
+    transition: 1s;
 }
 
 .card .texty {
     font-family: 'Ibarra Real Nova', serif;
     letter-spacing: 2px;
+    transition: 1s;
 }
 
 .card:hover .web, .card:hover .foto, .card:hover .grafika, .card:hover .texty  {
     text-decoration: underline;
-    transition: 500ms;
+    transition: 1s;
 }
 
 .card p {
     color: var(--fourth-color);
+    transition: 1s;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    font-family: var(--second-font);
 }
 
 .card .btn {
@@ -114,28 +130,36 @@ body {
     padding: 5px 13px 5px 13px;
     border-radius: 5px;
     font-family: var(--second-font);
-
+    transition: 0.3s;
 }
 
 .card .btn a {
     color: var(--first-color);
     letter-spacing: 0.3px;
     text-decoration: none;
-    
+    transition: 1s;
 }
 
 
 .card button:hover {
     background-color: var(--fourth-color);
+    transition: 1s;
 }
 
 .card #icon1, .card #icon2, .card #icon3, .card #icon4 {
     font-size: 70px;
     padding-top: 80px;
     color: var(--first-color);
+    transition: 1s;
 }
 
-.card p {
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
