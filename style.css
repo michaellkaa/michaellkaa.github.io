@@ -317,6 +317,15 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+    .navigace {display: none;}
+    .mobile-nav {display: block;}
+    .mobile-nav {padding-top: 15px;}
+    .mobile-nav a {font-size: 18px;}
+    .open {display: block;}
+    .open-mobile-nav {display: block;}
+}
+
+@media screen and (max-width: 550px) {
     #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
 }
  
