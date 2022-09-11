@@ -309,7 +309,6 @@ footer {
     .navigace {display: block;}
     .mobile-nav {display: none;
         padding-top: 15px;}
-    
     .open {display: none;}
     .open-mobile-nav {display: none;}
     .header2 {display:none;}
@@ -323,12 +322,10 @@ footer {
     .mobile-nav a {font-size: 18px;}
     .open {display: block;}
     .open-mobile-nav {display: block;}
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 15em;width: 40%;}
+    .header1 {display: none;}
+    .header2 {display: block;}
 }
-
-@media screen and (max-width: 550px) {
-    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
-}
- 
 
 @media screen and (max-width: 505px) {
     .about p {font-size: 12px;}
