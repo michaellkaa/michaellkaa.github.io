@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -87,16 +89,16 @@ body {
     transition: 1s;
 }
 
-.card .web {
+.card .web  {
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 1.5px;
     transition: 1s;
 }
 
 .card .foto {
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Dancing Script', cursive;
     letter-spacing: 1px;
-    font-weight: 100;
+    font-weight: 400;
     transition: 1s;
 }
 
@@ -162,4 +164,8 @@ body {
 @media screen and (max-width: 915px) {
     .loader img {width: 10px;height: auto;}
     #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+}
+
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
 }

@@ -272,6 +272,10 @@ body {
     #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
 
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
 @media screen and (max-width: 476px){
     .pic1 img, .pic2 img, .pic3 img {width: 300px; height: auto;}
     .pic4 img { width: 260px; height: auto;}

@@ -141,6 +141,10 @@ body {
     .sloh1, .sloh2, .sloh3 {display: grid;}
 }
 
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
 @media screen and (max-width: 375px){
     .dopis-v-lahvi p, .mami p, .nevis p { margin-left: 60px; margin-right: 60px;}
     .sloh1, .sloh2, .sloh3 {display: grid;}

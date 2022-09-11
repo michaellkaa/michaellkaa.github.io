@@ -199,6 +199,10 @@ body {
     #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
 }
 
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
 @media screen and (max-width: 420px){ 
     .grafika1, .grafika2, .grafika3, .grafika4, .grafika5, .grafika6, .grafika7, .grafika8 { display: grid;}
     .grafika1 img, .grafika2 img, .grafika3 img, .grafika4 img, .grafika5 img, .grafika6 img, .grafika7 img, .grafika8 img {width: auto; height: 140px; }    
