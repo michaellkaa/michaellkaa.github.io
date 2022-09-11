@@ -106,12 +106,14 @@ body {
     font-family: 'Comic Neue', cursive;
     letter-spacing: 0.75px;
     transition: 1s;
+    font-weight: 300;
 }
 
 .card .texty {
     font-family: 'Ibarra Real Nova', serif;
     letter-spacing: 2px;
     transition: 1s;
+    font-weight: 400;
 }
 
 .card:hover .web, .card:hover .foto, .card:hover .grafika, .card:hover .texty  {
