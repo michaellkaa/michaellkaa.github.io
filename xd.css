@@ -71,6 +71,8 @@ body {
     align-items: center;
 }
 
+
+
 .w1 h3, .fs h3 {
     font-size: 50px;
     text-align: center;
@@ -191,8 +193,9 @@ body {
 }
 @media screen and (max-width: 616px){
     /*.fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}*/
-    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 80px; width:auto;}
+    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 140px; width:auto;}
      .w1 h3, .fs h3 {font-size: 30px;}
+     .w1 .fotky, .fs .fotky {display: grid; }
 }
 
 @media screen and (max-width: 550px) {
@@ -201,18 +204,18 @@ body {
 
 @media screen and (max-width: 512px){
     /*.fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}*/
-    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 70px; width:auto;}
+    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 140px; width:auto;}
      .w1 h3, .fs h3 {font-size: 30px;}
 }
 
 @media screen and (max-width: 450px){
     /*.fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}*/
-    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 70px; width:auto;}
+    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 140px; width:auto;}
      .w1 h3, .fs h3 {font-size: 25px;}
 }
 
 @media screen and (max-width: 429px){
     /*.fotka1 p, .fotka2 p, .fotka3 p, .fotka4 p, .fotka5 p, .fotka6 p, .fotka7 p, .fotka8 p, .fotka9 p{ margin-left: 80px; margin-right: 80px;}*/
-    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 60px; width:auto; }
+    .fotka1 img,.fotka2 img, .fotka3 img,.fotka4 img, .fotka5 img, .fotka6 img {height: 140px; width:auto; }
      .w1 h3, .fs h3 {font-size: 25px;}
 }
