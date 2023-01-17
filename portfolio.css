@@ -56,7 +56,8 @@ body {
 .card {
     width: 230px;
     height: 380px;
-    background-color: var(--second-color);
+    /*background-color: var(--second-color);*/
+    border:  2px var(--third-color) solid;
     border-radius: 20px;
     display: inline-block;
     margin-top: 170px;
@@ -66,12 +67,12 @@ body {
     transition: 1s;
 }
 
-.card:hover {
+/*.card:hover {
     width: 240px;
     height: 390px;
     transition: 1s;
     
-}
+}*/
 
 .card:hover #icon1, .card:hover #icon2, .card:hover #icon3,  .card:hover #icon4 {
     font-size: 100px;
@@ -80,11 +81,11 @@ body {
 
 .card:hover h2 {
     padding-top: 5px;
-    transition: 1s;
+    transition: 5s;
 }
 
 .card h2 {
-    color: var(--first-color);
+    color: var(--second-color);
     padding-top: 35px;
     transition: 1s;
 }
@@ -117,8 +118,11 @@ body {
 }
 
 .card:hover .web, .card:hover .foto, .card:hover .grafika, .card:hover .texty  {
-    text-decoration: underline;
     transition: 1s;
+}
+
+.card .grafika  {
+    top: 2px;
 }
 
 .card p {
@@ -133,6 +137,7 @@ body {
     background-color: var(--third-color);
     padding: 5px 13px 5px 13px;
     border-radius: 5px;
+    border: 0.5px solid var(--second-color);
     font-family: var(--second-font);
     transition: 0.3s;
 }
@@ -153,7 +158,7 @@ body {
 .card #icon1, .card #icon2, .card #icon3, .card #icon4 {
     font-size: 70px;
     padding-top: 80px;
-    color: var(--first-color);
+    color: var(--second-color);
     transition: 1s;
 }
 

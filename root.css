@@ -10,7 +10,7 @@
 :root {
     --first-color: #F3f4FC;
     --second-color: rgb(9, 9, 9);
-    --third-color: #561790;
+    --third-color: /*#561790*/ #4700cb;
     --fourth-color: rgb(152, 152, 152);
     --first-font: 'Cormorant Infant', serif;
     --second-font: 'Work Sans', sans-serif;

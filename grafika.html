@@ -12,8 +12,77 @@
 
 </head>
 
-
 <body onload="loader()">
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="logo-invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+   
+        <header>
+    <div class="icons">
+    <a href="index.html" class="home-icon">
+        <ion-icon name="home-outline"></ion-icon>
+    </a>
+
+    <a href="#" class="star-icon" onclick="changeColorMode()">
+        <ion-icon name="star-half-outline"></ion-icon>
+    </a>
+    </div>
+    </header>
+
+    <div class="container">
+    <div class="card">
+        <ion-icon name="color-wand-outline" class=" icon1" id="icon1"></ion-icon>
+        <h2 class="ai">Adobe Illustrator</h2>
+        <button type="button" class="btn btn-info"> <a href="ai.html">see more</a> </button>
+    </div>
+    
+    
+
+    <div class="card">
+        <ion-icon name="color-fill-outline" class=" icon2" id="icon2"></ion-icon>
+        <h2 class="ps">Photoshop</h2>
+        <button type="button" class="btn btn-info"> <a href="ps.html">see more</a> </button>
+    </div>
+    
+    <div class="card">
+        <ion-icon name="create-outline" class="icon3" id="icon3"></ion-icon>
+        <h2 class="xd">AdobeXD</h2>
+        <button type="button" class="btn btn-info"> <a href="xd.html">see more</a> </button>
+    </div>
+ 
+
+ </div>
+    <script src="script.js"></script>
+    <script>
+  
+        var timer;
+        function loader() {
+            timer = setTimeout(showPage, 2000);
+        }
+        function showPage() {
+            document.getElementById("load-logo").style.display = "none";
+            
+            document.getElementById("home").style.display = "block";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+    function changeImage () {
+        const logo2 = document.getElementById("load-logo")
+    
+        if (localStorage.getItem("colorMode") == "dark") {
+            logo2.classList.add("invert");
+        } else {
+            logo2.classList.remove("invert");
+        }
+    }
+    
+    changeImage ();
+</script>
+</body>
+<!-- <body onload="loader()">
     
     <div class="load" id="loader">
       <img src="logo-black_b.png" id="load-logo" class="invert">
@@ -226,5 +295,5 @@ function changeColorMode () {
 
 
 setColorMode();</script>
-</body>
+</body> -->
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe XD</title>
+    <link rel="stylesheet" href="xd.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Ibarra+Real+Nova&family=Marcellus&family=Nanum+Myeongjo&family=Oranienbaum&family=PT+Serif&family=Playfair+Display&family=Unna&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+
+</head>
+
+
+<body onload="loader()">
+    
+    <div class="load" id="loader">
+      <img src="logo-black_b.png" id="load-logo" class="invert">
+    </div>
+    <span style="display:none;" id="home" class="homepage">
+
+        <div class="icons">
+            <a href="index.html" class="home-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        
+            <a href="portfolio.html" class="portfolio-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+            </a>
+        
+            <a href="#" class="star-icon" onclick="changeColorMode()">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </a>
+        </div>
+
+
+        <div class="w1">
+            <h3>Web 1</h3>
+            <div class="fotky">
+        <div class="fotka1">
+            <a href="" ><img src="Web (1).png" alt=""></a>
+           
+       </div> <div class="fotka2">
+        <a href="" ><img src="Web (2).png" alt=""></a>
+       
+   </div> <div class="fotka3">
+    <a href="" ><img src="Web (3).png" alt=""></a>
+   </div>
+</div></div>
+
+    <div class="fs">
+        <h3>Filip Stehlík</h3>
+        <div class="fotky">
+        <div class="fotka4">
+            <a href="" ><img src="Web (4).png" alt="" ></a>
+        </div>   
+        <div class="fotka5">
+            <a href="" ><img src="Web (5).png" alt="" ></a>
+        </div>  
+        <div class="fotka6">
+            <a href="" ><img src="Web (6).png" alt="" ></a>
+        </div>  
+    </div>
+</div>   
+        <script src="script.js"></script>
+        <script>
+      
+            var timer;
+            function loader() {
+                timer = setTimeout(showPage, 2000);
+            }
+            function showPage() {
+                document.getElementById("load-logo").style.display = "none";
+                
+                document.getElementById("home").style.display = "block";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+        function changeImage () {
+            const logo2 = document.getElementById("load-logo")
+        
+            if (localStorage.getItem("colorMode") == "dark") {
+                logo2.classList.add("invert");
+            } else {
+                logo2.classList.remove("invert");
+            }
+        }
+        
+        changeImage ();
+    </script>
+    </body>
+</html>

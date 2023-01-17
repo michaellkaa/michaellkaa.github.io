@@ -1,4 +1,164 @@
+
+
 html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 20px ;
+    padding: 0%;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+#load-logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  margin-top: 16em;
+  width: 40%;
+}
+.invert {
+    filter: invert(100%);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+    transition: 1s;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+    transition: 1s;
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+    transition: 1s;
+}
+
+.card {
+    width: 230px;
+    height: 380px;
+   /* background-color: var(--second-color);*/
+    border: 2px var(--third-color) solid;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 170px;
+    margin-right: 70px;
+    margin-left: 70px;
+    filter: brightness(90%);
+    transition: 1s;
+}
+
+/*.card:hover {
+    width: 240px;
+    height: 390px;
+    transition: 1s;
+    
+}*/
+
+.card #icon1, .card #icon2, .card #icon3{
+    font-size: 70px;
+    padding-top: 80px;
+    color: var(--second-color);
+    transition: 1s;
+}
+
+.card:hover #icon1, .card:hover #icon2, .card:hover #icon3 {
+    font-size: 100px;
+    transition: 1s;
+}
+
+.card:hover h2 {
+    padding-top: 5px;
+    transition: 5s;
+}
+
+.card h2 {
+    color: var(--second-color);
+    padding-top: 35px;
+    transition: 5s;
+    font-family: var(--second-font);
+    font-weight: 400;
+}
+
+.card .ai {
+    /*font-family: 'Dancing Script', cursive;*/
+    transition: 1s;
+}
+
+.card .ps {
+    /*font-family: 'Comic Neue', cursive;*/
+    transition: 1s;
+}
+
+.card .xd {
+    /*font-family: 'Ibarra Real Nova', serif;*/ 
+    transition: 1s;
+}
+
+.card:hover .ai, .card:hover .ps,.card:hover .xd  {
+   /* text-decoration: underline;*/
+    transition: 1s;
+}
+
+.card .btn {
+    background-color: var(--third-color);
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    border: 0.5px solid var(--second-color);
+    font-family: var(--second-font);
+    transition: 0.3s;
+}
+
+.card .btn a {
+    color: var(--first-color);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+.card button:hover {
+    background-color: var(--fourth-color);
+    transition: 1s;
+}
+
+
+
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+}
+
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
+/*html {
     scroll-behavior: smooth;
 }
 
