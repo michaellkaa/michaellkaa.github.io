@@ -14,21 +14,43 @@
 
 <body onload="loader()">
     <div class="load" id="loader">
-      <img src="logo-black_b.png" id="load-logo" class="logo-invert">
+      <img src="./logo-black_b.png" id="load-logo" class="invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
-   
-        <header>
-    <div class="icons">
-    <a href="index.html" class="home-icon">
-        <ion-icon name="home-outline"></ion-icon>
-    </a>
 
-    <a href="#" class="star-icon" onclick="changeColorMode()">
-        <ion-icon name="star-half-outline"></ion-icon>
-    </a>
-    </div>
-    </header>
+    
+    <header class="header1">
+    <div class="navigace">
+    
+<nav>
+    
+    <img src="logo-black_b.png" id="logo" class="invert" >
+    <a href="#home" id="current" >home</a>
+    <a href="#about" >about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</nav>
+</div >
+</header>
+<header class="header2">
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home" id="mainnav" class="current">home</a>
+    <a href="#about" id="aboutnav">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
 
     <div class="container">
     <div class="card">

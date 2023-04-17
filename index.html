@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Ibarra+Real+Nova&family=Marcellus&family=Nanum+Myeongjo&family=Oranienbaum&family=PT+Serif&family=Playfair+Display&family=Unna&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 </head>
 <body onload="loader()">
     <div class="load" id="loader">
-      <img src="logo-black_b.png" id="load-logo" class="invert">
+      <img src="./logo-black_b.png" id="load-logo" class="invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
 
@@ -26,12 +27,12 @@
     
 <nav>
     
-    <img src="logo-black_b.png" id="logo" class="invert">
-    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
-    <a href="#home">home</a>
-    <a href="#about">about</a>
+    <img src="logo-black_b.png" id="logo" class="invert" >
+    <a href="#home" id="current" >home</a>
+    <a href="#about" >about</a>
     <a href="portfolio.html">portfolio</a>
     <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
 </nav>
 </div >
 </header>
@@ -41,13 +42,14 @@
     <nav>
         <div class="mobile-nav" id="mySidenav">
     <img src="logo-black_b.png" id="mobile-logo" class="invert">
-    <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+    
     
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#home">home</a>
-    <a href="#about">about</a>
+    <a href="#home" id="mainnav" class="current">home</a>
+    <a href="#about" id="aboutnav">about</a>
     <a href="portfolio.html">portfolio</a>
     <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
 </div>
 </nav>
 <p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
@@ -56,31 +58,42 @@
 <div class="introduce" >
 <h1>Michaelka</h1>
 <p>vývojář a grafik</p>
+
+<img src="./logo-css-3-1536.png" alt="" id="css">
+<img src="./html.png" alt="" id="html">
+<img src="./stažený soubor.png" alt="" id="figma">
 </div>
 
-<div class="about" >
+<div class="container2">
+    
+</div>
+    <section>
+<div class="slova">
+    <div class="about" id="about" >
 
-<h4 id="about">ABOUT</h4>
-<span class="span about">
-<p> Jsem Michaela Ptáčková a je mi 15 let. Mým cílem je mít vlastní firmu ve které se budu zajímat o multimédia, webové stránky a design.</p> 
-<p>Mimo tvorbu webovek se zajímám o umění, což zahrnuje grafický design, hudbu, hru na klávesy, flétnu a kytaru, a taky knihy a poezii.</p>
-<p >Pokud vás zajímají mé práce tak je najdete v mém <a class="text-portfolio" href="portfolio.html">portfoliu</a>.</p>
-
-<h6>Praxe</h6>
-<p>Jako praxi v oboru mimo školu dělám webové stránky, na které se můžete podívat <a href="webovky.html">zde</a>.</p>
-<p>Ceník není stálý, proto ho zde nemohu dát, ceny jsou však velni výhodné, když zvážíme práci i čas.</p>
-
-<h6>Škola</h6>
-<p>Studuji na <a href="https://skolabaltaci.cz/">SŠ Baltaci</a> ve Zlíně, na oboru Informační technologie.</p>
-<p>V rámci školy se nejvíce zajímám o vývoj her, webových stránek a také o grafický design.</p>
-
-</span>
+        <span class="span about">
+        <p> Jsem Michaela Ptáčková a je mi 15 let. Mým cílem je mít vlastní firmu ve které se budu zajímat o multimédia, webové stránky a design.</p> 
+        <p>Mimo tvorbu webovek se zajímám o umění, což zahrnuje grafický design, hudbu, hru na klávesy, flétnu a kytaru, a taky knihy a poezii.</p>
+        <p >Pokud vás zajímají mé práce tak je najdete v mém <a class="text-portfolio" href="portfolio.html">portfoliu</a>.</p>
+        
+        <p>Jako praxi v oboru mimo školu dělám webové stránky, na které se můžete podívat <a href="webovky.html">zde</a>.</p>
+        <p>Ceník není stálý, proto ho zde nemohu dát, ceny jsou však velni výhodné, když zvážíme práci i čas.</p>
+        
+        <p>Studuji na <a href="https://skolabaltaci.cz/">SŠ Baltaci</a> ve Zlíně, na oboru Informační technologie.</p>
+        <p>V rámci školy se nejvíce zajímám o vývoj her, webových stránek a také o grafický design.</p>
+        
+        </span>
+        </div>
+</div>
+<div class="obrazek">
+    <img src="./fotky (1).png" alt="">
+</div></section>
 </div>
 <div class="kontakt" id="kontakt">
     <footer>
         <a href="mailto:michaela.ptackova.mp@gmail.com" ><ion-icon name="mail-outline" class="mail" ></ion-icon></a>
         <a href="http://www.instagram.com/michaelka.__/" target="_blank" > <ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
-        <p>@Michaelka 2022</p>
+        <p>@Michaelka 2022-2023</p>
     </footer>
 </div>
 <script src="script.js"></script>

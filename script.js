@@ -31,6 +31,8 @@ function changeColorMode () {
 
 setColorMode();
 
+
+
 function changeImage () {
     const logo = document.getElementById("logo")
     

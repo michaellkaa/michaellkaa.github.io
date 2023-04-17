@@ -22,45 +22,65 @@
       <img src="logo-black_b.png" id="load-logo" class="logo-invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
-   
-        <header>
-    <div class="icons">
-    <a href="index.html" class="home-icon">
-        <ion-icon name="home-outline"></ion-icon>
-    </a>
-
-    <a href="#" class="star-icon" onclick="changeColorMode()">
-        <ion-icon name="star-half-outline"></ion-icon>
-    </a>
-    </div>
-    </header>
+        <header class="header1">
+            <div class="navigace">
+            
+        <nav>
+            
+            <img src="logo-black_b.png" id="logo" class="invert" >
+            <a href="index.html">home</a>
+            <a href="index.html">about</a>
+            <a href="#" id="current">portfolio</a>
+            <a href="kontakt.html">contact</a>
+            <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+        </nav>
+        </div >
+        </header>
+        <header class="header2">
+        <div class="open-mobile-nav">
+            
+            <nav>
+                <div class="mobile-nav" id="mySidenav">
+            <img src="logo-black_b.png" id="mobile-logo" class="invert">
+            <a href="" onclick="changeColorMode()" id="dark-mode" >color</a>
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="kontakt.html">contact</a>
+        </div>
+        </nav>
+        <p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+        </header>
+        
 
     <div class="container">
     <div class="card">
         <ion-icon name="code-slash-outline" class=" icon1" id="icon1"></ion-icon>
         <h2 class="web"> webovky</h2>
-        <p>Práce od začátku roku 2022, fotky a popis dřívějších prací.</p>
+        
         <button type="button" class="btn btn-info"> <a href="webovky.html">see more</a> </button>
     </div>
     
     <div class="card">
         <ion-icon name="camera-outline" class=" icon2" id="icon2"></ion-icon>
         <h2 class="foto">fotografie</h2>
-        <p>Práce od roku 2020, ukázky fotek i popis prací.</p>
+       
         <button type="button" class="btn btn-info"> <a href="fotky.html"> see more</a></button>
     </div>
 
     <div class="card">
         <ion-icon name="color-palette-outline" class=" icon3" id="icon3"></ion-icon>
         <h2 class="grafika">grafika</h2>
-        <p>Práce na počítači a tvorba loga. Popis techniky práce.</p>
+        
         <button type="button" class="btn btn-info"> <a href="grafika.html">see more</a> </button>
     </div>
     
     <div class="card">
         <ion-icon name="document-text-outline" class="icon4" id="icon4"></ion-icon>
         <h2 class="texty">texty</h2>
-        <p>Práce od roku  2022, krátké povídky i delší texty.</p>
+       
         <button type="button" class="btn btn-info"> <a href="texty.html">see more</a> </button>
     </div>
  

@@ -150,3 +150,79 @@ body {
     .sloh1, .sloh2, .sloh3 {display: grid;}
     .dopis-v-lahvi h4, .mami h4, .nevis h4 {font-size: 30px;}
 }
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+}
+
+@media screen and (max-width: 550px) {
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 16em;width: 40%;}
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (max-width: 915px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+}
+
+@media screen and (max-width: 810px) {
+    .navigace {word-spacing: 70px ;}
+}
+
+@media screen and (max-width: 780px) {
+    .navigace {word-spacing: 60px ;}
+}
+
+@media screen and (max-width: 740px) {
+    .navigace {word-spacing: 55px ;}
+}
+
+@media screen and (max-width: 705px) {
+    .navigace {word-spacing: 45px;}
+}
+
+@media screen and (max-width: 660px) {
+    .navigace {word-spacing: 40px;}
+}
+
+@media screen and (max-width: 618px) {
+    .navigace {font-size: 12px;}
+}
+
+@media screen and (max-width: 560px) {
+    .navigace {font-size: 10px;  }
+}
+
+/*mobile nav*/
+
+@media screen and (min-width: 550px) {
+    .navigace {display: block;}
+    .mobile-nav {display: none;
+        padding-top: 15px;}
+    .open {display: none;}
+    .open-mobile-nav {display: none;}
+    .header2 {display:none;}
+    .header1 { display: block;}
+}
+
+@media screen and (max-width: 550px) {
+    .navigace {display: none;}
+    .mobile-nav {display: block;}
+    .mobile-nav {padding-top: 15px;}
+    .mobile-nav a {font-size: 18px;}
+    .open {display: block;}
+    .open-mobile-nav {display: block;}
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 15em;width: 40%;}
+    .header1 {display: none;}
+    .header2 {display: block;}
+}
