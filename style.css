@@ -156,6 +156,8 @@ top: 50px;
 right: 10px;
 }
 
+
+
 .introduce h1 {
     text-align: center;
     font-size: 150px;
@@ -189,11 +191,11 @@ right: 10px;
 }
 
 #css {
-    z-index: 11;
+    z-index: 1;
     width: 103.22px;
     rotate: 7.12deg;
-    filter: blur(1px);
-    top: 350px;
+    filter: blur(3px);
+    top: 270px;
     left: 1195px;
     position: absolute;
 }
@@ -202,7 +204,7 @@ right: 10px;
     z-index: 1;
     width: 261.77px;
     rotate: -9.34deg;
-    filter: blur(3px);
+    filter: blur(4px);
     top: 250px;
     left: 330px;
     position: absolute;
@@ -256,7 +258,7 @@ section .slova img{
     z-index: 5;
 }
 
-.about p {
+.about p, .button {
     font-family: var(--second-font);
     font-size: 18px;
     color: var(--second-color);
@@ -271,6 +273,28 @@ section .slova img{
 .about a {
     color: var(--third-color);
     text-decoration: none;
+}
+
+.button {
+    background-color: transparent;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    border: 2px solid var(--third-color);
+    font-family: var(--second-font);
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.button a {
+    color: var(--second-color);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.button:hover { 
+    transition: 1s;
+    border: 0.5px solid var(--fourth-color);
 }
 
 .text-portfolio {padding: 5px;}
@@ -312,7 +336,7 @@ footer {
     section .slova {margin: 150px 350px 0 50px; flex: 1;}
     .slova {padding: 100px 0 50px 50px; margin: 0;}
     .about {margin: 0; padding: 0%;}
-    .about p {font-size: 19px;}
+    .about p, .button {font-size: 19px;}
     section .obrazek img {padding: 100px ; width: 500px; margin: 0%;}
     .container2 {display: none;}
     #html {left: 450px;}
@@ -386,6 +410,8 @@ footer {
     section .slova {
         margin: 95px 40px 0 40px ;
     }
+    .btn {display: flex; align-items: center; justify-content: center;}
+
 }
 
 @media screen and (max-width: 740px) {
@@ -422,7 +448,7 @@ footer {
     .kontakt {font-size: 12px;}
     .kontakt a:hover {font-size: 12px;}
     .open-mobile-nav {display: none;}
-    .about p {font-size: 14px;}
+    .about p, .button {font-size: 14px;}
 }
 
 /*mobile nav*/
@@ -495,17 +521,18 @@ footer {
 }*/
 
 @media screen and (max-width: 505px) {
-    .about p {font-size: 12px;}
+    .about p, .button {font-size: 12px;}
     .introduce h1 {font-size: 95px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 50px 0 50px;
     text-align: center; margin: 95px 0 100px 0;}
     .kontakt {font-size: 12px;}
     .kontakt a:hover {font-size: 12px;}
+    .button {margin-top: 20px;}
 }
 
 @media screen and (max-width: 450px) {
-    .about p {font-size: 12px;}
+    .about p, .button {font-size: 12px;}
     .introduce h1 {font-size: 85px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 50px 0 50px;
@@ -516,7 +543,7 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-    .about p {font-size: 12px; }
+    .about p, .button {font-size: 12px; }
     .introduce h1 {font-size: 75px;}
     .introduce p {font-size: 25px; }
     .about {padding: 20px 30px 0 30px;
@@ -527,7 +554,7 @@ footer {
 }
 
 @media screen and (max-width: 385px) {
-    .about p {font-size: 12px;}
+    .about p, .button {font-size: 12px;}
     .introduce h1 {font-size: 70px;}
     .kontakt {font-size: 10px;}
     .kontakt a:hover {font-size: 10px;}
@@ -535,7 +562,7 @@ footer {
 }
 
 @media screen and (max-width: 330px) {
-    .about p {font-size: 13px;}
+    .about p, .button {font-size: 13px;}
     .introduce h1 {font-size: 60px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 10px 0 10px;
@@ -546,7 +573,7 @@ footer {
 }
 
 @media screen and (max-width: 300px) {
-    .about p {font-size: 13px;}
+    .about p, .button {font-size: 13px;}
     .introduce h1 {font-size: 55px;}
     .introduce p {font-size: 25px;}
     .about {padding: 20px 0 0 0;
@@ -557,7 +584,7 @@ footer {
 }
 
 @media screen and (max-width: 279px) {
-    .about p {font-size: 13px;}
+    .about p, .button {font-size: 13px;}
     .introduce h1 {font-size: 55px;}
     .introduce p {font-size: 25px;}
     .about {
@@ -568,7 +595,7 @@ footer {
 }
 
 @media screen and (max-width: 250px) {
-    .about p {font-size: 12px;}
+    .about p, .button {font-size: 12px;}
     .introduce h1 {font-size: 40px;}
     .introduce p {font-size: 20px;}
     .about {
@@ -580,7 +607,7 @@ footer {
 }
 
 @media screen and (max-width: 210px) {
-    .about p {font-size: 12px;}
+    .about p, .button {font-size: 12px;}
     .introduce h1 {font-size: 40px;}
     .introduce p {font-size: 20px;}
     .about {
@@ -593,7 +620,7 @@ footer {
 }
 
 @media screen and (max-width: 185px) {
-    .about p {font-size: 12px;}
+    .about p , .button {font-size: 12px;}
     .introduce h1 {font-size: 33px;}
     .introduce p {font-size: 17px;}
     .about {
