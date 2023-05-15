@@ -1,0 +1,596 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+header {
+    height: 15vh;
+}
+
+.flash {
+    color: var(--second-color);
+    transition: 1s;
+    font-size: 25px;
+    margin-left: 0%;
+    margin-right: 20px;
+    transition: 1s;
+    position: relative;
+    top: 7px;
+}
+
+#flash:hover {
+    color: var(--third-color);
+    transition: 1s;
+}
+
+
+.loader img {
+    width: 20px;
+    height: auto;
+
+}
+
+#load-logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  margin-top: 16em;
+  width: 40%;
+  z-index: 50;
+}
+
+#logo {
+    width: auto;
+    height: 35px;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.navigace {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-right: 70px;
+    margin: 0;
+    word-spacing: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: var(--second-font);
+    position: fixed;
+    top: 0%;
+    flex-wrap: nowrap;
+    height: 80px;
+    width: 99%;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    /*background-color: rgb(158, 97, 215);*/
+    background: transparent;
+    font-weight: 400;
+    z-index: 15;
+}
+
+
+.navigace a {
+    padding-top: 0%;
+    padding-bottom: 10px;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.navigace a:hover {
+    color: var(--third-color);
+}
+
+#current{
+    color: var(--third-color);
+}
+
+#mobile-logo {
+    width: auto;
+    height: 45px;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-nav {
+    text-align: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--second-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-weight: 400;
+}
+  
+.mobile-nav a {
+    padding: 20px 8px 20px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--first-color);
+    display: block;
+    transition: 0.4s;
+    font-family: var(--second-font);
+    text-transform: uppercase;
+}
+  
+.mobile-nav a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+  
+.mobile-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.mobile-nav .closebtn:hover {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.open { color: var(--second-color);
+padding: 0%;
+text-align: right;
+top: 50px;
+right: 10px;
+}
+
+
+
+.introduce h1 {
+    text-align: center;
+    font-size: 150px;
+    color: var(--second-color);
+    margin-bottom: 0%;
+    padding-top: 100px;
+    font-family: var(--first-font);
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.introduce p {
+    text-align: center;
+    font-size: 40px;
+    color: var(--second-color);
+    font-family: var(--second-font);
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    z-index: 10;
+}
+
+#figma {
+    z-index: 1;
+    width: 80px;
+    rotate: 3.34deg;
+    filter: blur(3px);
+    top: 650px;
+    left: 600px;
+    position: absolute;
+}
+
+#css {
+    z-index: 1;
+    width: 103.22px;
+    rotate: 7.12deg;
+    filter: blur(3px);
+    top: 270px;
+    left: 1195px;
+    position: absolute;
+}
+
+#html {
+    z-index: 1;
+    width: 261.77px;
+    rotate: -9.34deg;
+    filter: blur(4px);
+    top: 250px;
+    left: 330px;
+    position: absolute;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+/*section .obrazek img{
+    flex: 1;
+    width: 850px;
+    height: auto;
+    margin: 95px 0 0 180px;
+}*/
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    background-color: #d3e5ff;
+    
+}
+
+section .obrazek img{
+    flex: 1;
+    width: 550px;
+    height: auto;
+    padding: 395px 200px 200px 120px;
+    z-index: 6;
+}
+
+section .slova{
+    flex: 3;
+    margin: 95px 240px 0 20px ;
+}
+section .slova img{
+    height: 150px;
+    width: auto;
+}
+
+
+
+
+.about{
+    margin: 400px 0 0 150px;
+    margin-bottom: 70px;
+    text-align: left;
+    z-index: 5;
+}
+
+.about p, .button {
+    font-family: var(--second-font);
+    font-size: 18px;
+    color: var(--second-color);
+    
+    font-family: var(--second-font);
+   font-weight: 400;
+    letter-spacing: 1.5px;
+    margin: 0%;
+    line-height: 30px;
+}
+
+.about a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.button {
+    background-color: transparent;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    border: 2px solid var(--third-color);
+    font-family: var(--second-font);
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.button a {
+    color: var(--second-color);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.button:hover { 
+    transition: 1s;
+    border: 2px solid var(--fourth-color);
+}
+
+.text-portfolio {padding: 5px;}
+
+footer {
+    background-color: var(--fourth-color);
+    padding-top: 40px;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.kontakt .mail, .kontakt .instagram {
+    text-decoration: none;
+    color: var(--first-color);
+    font-size: 25px;
+   padding-left: 15px;
+   padding-right: 15px;
+   transition: 0.7s;
+}
+
+.kontakt .mail:hover, .kontakt .instagram:hover {
+    /*font-size: 18px;*/
+    color: var(--third-color);
+}
+
+
+.kontakt p {
+    color: var(--first-color);
+    opacity: 30%;
+}
+
+@media screen and (max-width: 5000px ) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 20%;}
+}
+
+@media screen and (min-width: 2400px ) {
+    .introduce h1{ font-size: 180px;}
+    section .slova {margin: 150px 350px 0 50px; flex: 1;}
+    .slova {padding: 100px 0 50px 50px; margin: 0;}
+    .about {margin: 0; padding: 0%;}
+    .about p, .button {font-size: 19px;}
+    section .obrazek img {padding: 100px ; width: 500px; margin: 0%;}
+    .container2 {display: none;}
+    #html {left: 450px;}
+    #css {top: 370px; left: 1600px;}
+    #figma {top: 680px; left: 920px;}
+    .kontakt .mail, .kontakt .instagram {font-size: 45px;}
+}
+
+@media screen and (max-width: 1770px) {
+    .about { margin: 300px 0 0 150px;}
+    section .slova {margin: 95px 240px 0 20px ;}
+   }
+
+@media screen and (max-width: 1665px) {
+    .about { margin: 300px 0 0 150px;}
+    section .slova {margin: 95px 100px 0 20px ;}
+}
+
+@media screen and (min-width: 1500px) {
+    /*.about { margin: 300px 0 0 150px;}
+    section .slova {margin: 95px 100px 0 20px ;}
+    .obrazek{ width: 100px;}*/
+}
+
+@media screen and (max-width: 1500px) {
+    .obrazek{ display: none;}
+    section .slova {margin: 95px 100px 100px 20px ;}
+    #css {width: 90px; left: 1100px;}
+    #html {top: 210px; left: 300px; }
+}
+
+@media screen and (max-width: 1250px) {
+    #css {width: 90px; left: 1000px;}
+    #html {width: 220px; top: 220px; left: 150px; }
+}
+
+@media screen and (max-width: 1100px) {
+    #css {width: 90px; left: 800px;}
+    #html {width: 220px; top: 220px; left: 50px; }
+    #figma {top: 750px;}
+}
+
+@media screen and (max-width: 925px) {
+    .loader img {width: 10px;height: auto;}
+    #load-logo {display: block; position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); width: 30%;}
+    #css {width: 90px; left: 710px;}
+    #html {width: 200px; top: 220px; left: 30px; }
+    #figma {top: 680px;}
+
+}
+
+@media screen and (max-width: 810px) {
+    #css {width: 90px; left: 650px;}
+    #html {width: 200px; top: 220px; left: 30px; }
+    #figma {top: 650px;}
+    .introduce h1 {font-size: 135px;}
+    .introduce p {font-size: 30px;}
+    .navigace {word-spacing: 70px ;}
+}
+
+@media screen and (max-width: 780px) {
+    #css {display: none;}
+    #html {display: none; }
+    #figma {display: none;}
+    .introduce h1 {font-size: 125px;}
+    .introduce p {font-size: 25px;}
+    .kontakt {font-size: 17px;}
+    .kontakt a:hover {font-size: 18px;}
+    .navigace {word-spacing: 60px ;}
+    .about{margin: 95px 40px 100px 40px ; text-align: center;}
+    section .slova {
+        margin: 95px 40px 0 40px ;
+    }
+    .btn {display: flex; align-items: center; justify-content: center;}
+
+}
+
+@media screen and (max-width: 740px) {
+    .introduce h1 {font-size: 115px;}
+    .introduce p {font-size: 20px;}
+    .kontakt {font-size: 15px;}
+    .kontakt a:hover {font-size: 16px;}
+    .navigace {word-spacing: 55px ;}
+}
+
+@media screen and (max-width: 705px) {
+    .navigace {word-spacing: 45px;}
+}
+
+@media screen and (max-width: 660px) {
+    .introduce h1 {font-size: 115px;}
+    .introduce p {font-size: 25px;}
+    .kontakt a:hover {font-size: 18px;}
+    .navigace {word-spacing: 40px;}
+}
+
+@media screen and (max-width: 618px) {
+    .introduce h1 {font-size: 110px;}
+    .introduce p {font-size: 25px;}
+    .navigace {font-size: 12px;}
+    .kontakt {font-size: 15px;}
+    .kontakt a:hover {font-size: 15px;}
+}
+
+@media screen and (max-width: 560px) {
+    .introduce h1 {font-size: 100px;}
+    .introduce p {font-size: 25px;}
+    .navigace {font-size: 10px;  }
+    .kontakt {font-size: 12px;}
+    .kontakt a:hover {font-size: 12px;}
+    .open-mobile-nav {display: none;}
+    .about p, .button {font-size: 14px;}
+}
+
+/*mobile nav*/
+
+@media screen and (min-width: 550px) {
+    .navigace {display: block;}
+    .mobile-nav {display: none;
+        padding-top: 15px;}
+    .open {display: none;}
+    .open-mobile-nav {display: none;}
+    .header2 {display:none;}
+    .header1 { display: block;}
+    .flash {color: var(--second-color)}
+}
+
+@media screen and (max-width: 550px) {
+    .navigace {display: none;}
+    .mobile-nav {display: block;}
+    .mobile-nav {padding-top: 15px;}
+    .mobile-nav a {font-size: 18px;}
+    .open {display: block; padding: 10px; margin: 10px 10px 0 0;}
+    .open-mobile-nav {display: block;}
+    #load-logo {display: block; margin-left: auto;margin-right: auto;margin-bottom: 0%;margin-top: 15em;width: 40%;}
+    .header1 {display: none;}
+    .header2 {display: block;}
+    #css {width: 75px; left: 405px; top: 300px;}
+    #html {width: 200px; left: -60px ; top: 200px;}
+    #figma {width: 70px; top: 550px; left: 100px;}
+    .flash {color: var(--first-color); z-index: 15;}
+}
+
+@media screen and (max-width: 505px) {
+    .about p, .button {font-size: 12px;}
+    .introduce h1 {font-size: 95px;}
+    .introduce p {font-size: 25px;}
+    .about {padding: 20px 50px 0 50px;
+    text-align: center; margin: 95px 0 100px 0;}
+    .kontakt {font-size: 12px;}
+    .kontakt a:hover {font-size: 12px;}
+    .button {margin-top: 20px;}
+}
+
+@media screen and (max-width: 450px) {
+    .about p, .button {font-size: 12px;}
+    .introduce h1 {font-size: 85px;}
+    .introduce p {font-size: 25px;}
+    .about {padding: 20px 50px 0 50px;
+    text-align: center;}
+    .kontakt {font-size: 10px;}
+    .kontakt a:hover {font-size: 10px;}
+    .about h4 {font-size: 40px;}
+}
+
+@media screen and (max-width: 420px) {
+    .about p, .button {font-size: 12px; }
+    .introduce h1 {font-size: 75px;}
+    .introduce p {font-size: 25px; }
+    .about {padding: 20px 30px 0 30px;
+    text-align: center;}
+    .kontakt {font-size: 10px;}
+    .kontakt a:hover {font-size: 10px;}
+    .about h4 {font-size: 40px;}
+}
+
+@media screen and (max-width: 385px) {
+    .about p, .button {font-size: 12px;}
+    .introduce h1 {font-size: 70px;}
+    .kontakt {font-size: 10px;}
+    .kontakt a:hover {font-size: 10px;}
+    .about h4 {font-size: 40px;}
+}
+
+@media screen and (max-width: 330px) {
+    .about p, .button {font-size: 13px;}
+    .introduce h1 {font-size: 60px;}
+    .introduce p {font-size: 25px;}
+    .about {padding: 20px 10px 0 10px;
+    text-align: center;}
+    .kontakt {font-size: 10px;}
+    .kontakt a:hover {font-size: 10px;}
+    .about h4 {font-size: 40px;}
+}
+
+@media screen and (max-width: 300px) {
+    .about p, .button {font-size: 13px;}
+    .introduce h1 {font-size: 55px;}
+    .introduce p {font-size: 25px;}
+    .about {padding: 20px 0 0 0;
+    text-align: center;}
+    .kontakt {font-size: 10px;}
+    .kontakt a:hover {font-size: 10px;}
+    .about h4 {font-size: 30px;}
+}
+
+@media screen and (max-width: 279px) {
+    .about p, .button {font-size: 13px;}
+    .introduce h1 {font-size: 55px;}
+    .introduce p {font-size: 25px;}
+    .about {
+    text-align: center;}
+    .kontakt {font-size: 8px;}
+    .kontakt a:hover {font-size: 8px;}
+    .about h4 {font-size: 30px;}
+}
+
+@media screen and (max-width: 250px) {
+    .about p, .button {font-size: 12px;}
+    .introduce h1 {font-size: 40px;}
+    .introduce p {font-size: 20px;}
+    .about {
+    text-align: center;}
+    .kontakt {font-size: 8px;}
+    .kontakt a:hover {font-size: 8px;}
+    .about h4 {font-size: 25px;}
+    .about h6 {font-size: 20px;}
+}
+
+@media screen and (max-width: 210px) {
+    .about p, .button {font-size: 12px;}
+    .introduce h1 {font-size: 40px;}
+    .introduce p {font-size: 20px;}
+    .about {
+    text-align: center;}
+    .kontakt {font-size: 8px;}
+    .kontakt a:hover {font-size: 8px;}
+    .about h4 {font-size: 25px;}
+    .about h6 {font-size: 20px;}
+
+}
+
+@media screen and (max-width: 185px) {
+    .about p , .button {font-size: 12px;}
+    .introduce h1 {font-size: 33px;}
+    .introduce p {font-size: 17px;}
+    .about {
+    text-align: center;}
+    .kontakt {font-size: 9.5px;}
+    .kontakt a:hover {font-size: 9.5px;}
+    .about h4 {font-size: 25px;}
+    .about h6 {font-size: 18px;}
+
+}
+
+
+

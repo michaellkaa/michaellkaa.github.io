@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texty</title>
-    <link rel="stylesheet" href="texty.css">
-    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/texty.css">
+    <link rel="stylesheet" href="styles/root.css">
     <link rel="icon" href="paperclip.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,27 +20,45 @@
 
 
 <body onload="loader()">
-    
     <div class="load" id="loader">
-      <img src="logo-black_b.png" id="load-logo" class="invert">
+      <img src="./logo-black_b.png" id="load-logo" class="invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
 
-    <div class="texty" >
-        <div class="icons">
-            <a href="index.html" class="home-icon">
-                <ion-icon name="home-outline"></ion-icon>
-            </a>
     
-            <a href="portfolio.html" class="portfolio-icon">
-                <ion-icon name="reader-outline"></ion-icon>
-            </a>
+    <header class="header1">
+    <div class="navigace">
     
-            <a href="#" class="star-icon" onclick="changeColorMode()">
-                <ion-icon name="star-half-outline"></ion-icon>
-            </a>
+<nav>
     
-        </div>
+    <img src="logo-black_b.png" id="logo" class="invert" >
+    <a href="index.html"  >home</a>
+    <a href="index.html" >about</a>
+    <a href="portfolio.html"id="current">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</nav>
+</div >
+</header>
+<header class="header2">
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" id="mainnav" >home</a>
+    <a href="index.html" id="aboutnav">about</a>
+    <a href="portfolio.html"id="current">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
+
     
         <div class="dopis-v-lahvi">
             <h4>vzkaz v lahvi</h4>
@@ -85,65 +104,50 @@
         </div>
     </div>
 
-<script src="scripty/script.js"></script>
-
-  <script>
-  
-    var timer;
-    function loader() {
-        timer = setTimeout(showPage, 2000);
-    }
-    function showPage() {
-        document.getElementById("load-logo").style.display = "none";
+    <div class="kontakt" id="kontakt">
+        <footer>
+            <a href="mailto:michaela.ptackova.mp@gmail.com" ><ion-icon name="mail-outline" class="mail" ></ion-icon></a>
+            <a href="http://www.instagram.com/michaelka.__/" target="_blank" > <ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+            <p>@Michaelka 2022-2023</p>
+        </footer>
+    </div>
+    <script src="scripty/script.js"></script>
+    
+      <script>
+      
+        var timer;
+        function loader() {
+            timer = setTimeout(showPage, 2000);
+        }
+        function showPage() {
+            document.getElementById("load-logo").style.display = "none";
+            
+            document.getElementById("home").style.display = "block";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script> 
+    function changeImage() {
+    const logo3 = document.getElementById("mobile-logo")
         
-        document.getElementById("home").style.display = "block";
+        if (localStorage.getItem("colorMode") == "dark") {
+            logo3.classList.remove("invert");
+        } else {
+            logo3.classList.add("invert");
+        }
     }
-</script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>function changeImage () {
     
-
-    const logo2 = document.getElementById("load-logo")
-
-    if (localStorage.getItem("colorMode") == "dark") {
-        logo2.classList.add("invert");
-    } else {
-        logo2.classList.remove("invert");
-    }
-
-}
-
-changeImage ();</script>
-<script>function setColorMode() {
-    var elementBody = document.body;
+    changeImage ();</script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </body>
+    </html>
     
-    if (localStorage.getItem("colorMode") == "dark") {
-        elementBody.classList.add("dark-mode");
-    } else {
-        elementBody.classList.remove("dark-mode");
-    }
-
-
-
-};
-
-
-function changeColorMode () {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-
-    if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("colorMode", "dark");
-    } else {
-        localStorage.setItem("colorMode", "light");
-    }
-
-    console.log(localStorage.getItem("colorMode")); 
-};
-
-
-
-setColorMode();</script>
-</body>
-</html>

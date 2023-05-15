@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafika</title>
     <link rel="stylesheet" href="styles/grafika.css">
-    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="styles/root.css">
     <link rel="icon" href="paperclip.svg" type="image/x-icon">
 
 
@@ -25,9 +25,9 @@
 <nav>
     
     <img src="logo-black_b.png" id="logo" class="invert" >
-    <a href="#home" id="current" >home</a>
-    <a href="#about" >about</a>
-    <a href="portfolio.html">portfolio</a>
+    <a href="index.html" >home</a>
+    <a href="index.html" >about</a>
+    <a href="portfolio.html" id="current">portfolio</a>
     <a href="kontakt.html">contact</a>
     <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
 </nav>
@@ -42,9 +42,9 @@
     
     
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#home" id="mainnav" class="current">home</a>
-    <a href="#about" id="aboutnav">about</a>
-    <a href="portfolio.html">portfolio</a>
+    <a href="index.html" id="mainnav" >home</a>
+    <a href="index.html" id="aboutnav">about</a>
+    <a href="portfolio.html" id="current">portfolio</a>
     <a href="kontakt.html">contact</a>
     <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
 </div>
@@ -75,33 +75,49 @@
  
 
  </div>
-    <script src="scripty/script.js"></script>
-    <script>
+ <div class="kontakt" id="kontakt">
+    <footer>
+        <a href="mailto:michaela.ptackova.mp@gmail.com" ><ion-icon name="mail-outline" class="mail" ></ion-icon></a>
+        <a href="http://www.instagram.com/michaelka.__/" target="_blank" > <ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+        <p>@Michaelka 2022-2023</p>
+    </footer>
+</div>
+<script src="scripty/script.js"></script>
+
+  <script>
   
-        var timer;
-        function loader() {
-            timer = setTimeout(showPage, 2000);
-        }
-        function showPage() {
-            document.getElementById("load-logo").style.display = "none";
-            
-            document.getElementById("home").style.display = "block";
-        }
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-    function changeImage () {
-        const logo2 = document.getElementById("load-logo")
+    var timer;
+    function loader() {
+        timer = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+        document.getElementById("load-logo").style.display = "none";
+        
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script> 
+function changeImage() {
+const logo3 = document.getElementById("mobile-logo")
     
-        if (localStorage.getItem("colorMode") == "dark") {
-            logo2.classList.add("invert");
-        } else {
-            logo2.classList.remove("invert");
-        }
+    if (localStorage.getItem("colorMode") == "dark") {
+        logo3.classList.remove("invert");
+    } else {
+        logo3.classList.add("invert");
+    }
+}
+
+changeImage ();</script>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
     }
     
-    changeImage ();
-</script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
 </html>
