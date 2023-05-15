@@ -294,7 +294,7 @@ section .slova img{
 
 .button:hover { 
     transition: 1s;
-    border: 0.5px solid var(--fourth-color);
+    border: 2px solid var(--fourth-color);
 }
 
 .text-portfolio {padding: 5px;}
@@ -479,46 +479,6 @@ footer {
     #figma {width: 70px; top: 550px; left: 100px;}
     .flash {color: var(--first-color); z-index: 15;}
 }
-
-/*#figma {
-    z-index: 1;
-    width: 80px;
-    rotate: 3.34deg;
-    filter: blur(3px);
-    top: 650px;
-    left: 600px;
-    position: absolute;
-}
-
-#css {
-    z-index: 11;
-    width: 103.22px;
-    rotate: 7.12deg;
-    filter: blur(1px);
-    top: 350px;
-    left: 1195px;
-    position: absolute;
-}
-
-#html {
-    z-index: 1;
-    width: 261.77px;
-    rotate: -9.34deg;
-    filter: blur(3px);
-    top: 250px;
-    left: 330px;
-    position: absolute;
-}*/
-
-/*@media screen and (max-width: 560px) {
-    .introduce h1 {font-size: 100px;}
-    .introduce p {font-size: 25px;}
-    .navigace {font-size: 10px;  }
-    .kontakt {font-size: 12px;}
-    .kontakt a:hover {font-size: 12px;}
-    .open-mobile-nav {display: none;}
-    .about p {font-size: 14px;}
-}*/
 
 @media screen and (max-width: 505px) {
     .about p, .button {font-size: 12px;}
