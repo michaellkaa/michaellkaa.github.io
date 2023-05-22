@@ -203,6 +203,8 @@ text-align: right;}
     margin-left: 70px;
     filter: brightness(90%);
     transition: 1s;
+
+
 }
 
 /*.card:hover {
@@ -307,6 +309,9 @@ text-align: right;}
     transition: 1s;
 }
 
+footer {
+    margin-top: 200px;
+}
 
 @media screen and (max-width: 5000px ) {
     .loader img {width: 10px;height: auto;}
