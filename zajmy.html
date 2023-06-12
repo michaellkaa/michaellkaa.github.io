@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Zájmy</title>
     <link rel="stylesheet" href="styles/header-footer.css">
-    <link rel="stylesheet" href="styles/kontakt.css">
+    <link rel="stylesheet" href="styles/zajmy.css">
     <link rel="stylesheet" href="styles/root.css">
-    <link rel="icon" href="paperclip.svg" type="image/x-icon">
+    <link rel="icon" href="home.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Ibarra+Real+Nova&family=Marcellus&family=Nanum+Myeongjo&family=Oranienbaum&family=PT+Serif&family=Playfair+Display&family=Unna&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 </head>
-
-
 <body onload="loader()">
     <div class="load" id="loader">
-      <img src="logo-black_b.png" id="load-logo" class="logo-invert">
+      <img src="./logo-black_b.png" id="load-logo" class="invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
-        
-            
-            <header class="header1">
-            <div class="navigace">
-            
-        <nav>
-            
-            <img src="logo-black_b.png" id="logo" class="invert" >
-            <a href="index.html">home</a>
-            <a href="index.html">about</a>
-            <a href="portfolio.html">portfolio</a>
-            <a href="#" id="current">contact</a>
-            <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
-        </nav>
-        </div >
-        </header>
-        <header class="header2">
-            <div class="open-mobile-nav">
-                
-                <nav>
-                    <div class="mobile-nav" id="mySidenav">
-                <img src="logo-black_b.png" id="mobile-logo" class="invert">
-                
-                
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html" id="mainnav" >home</a>
-                <a href="index.html" id="aboutnav">about</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="#" id="current">contact</a>
-                <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
-            </div>
-            </nav>
-            <p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
-            </header>
-        
-   
 
-    <div class="container2">
     
-    </div>
-        <section>
-    <div class="slova">
-        <div class="udaje">
-            <a href="tel:+420773759405">+420 773 759 405</a>
-            <a href="mailto:ptackova@deware.eu">ptackova@deware.eu</a>
-            </div>
-            </div>
-    </div>
-    <div class="obrazek">
-        <img src="img/fotky (1).png" alt="">
-    </div></section>
-    </div>
+    <header class="header1">
+    <div class="navigace">
+    
+<nav>
+    
+    <img src="logo-black_b.png" id="logo" class="invert" >
+    <a href="index.html" id="current" >home</a>
+    <a href="index.html" >about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</nav>
+</div >
+</header>
+<header class="header2">
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" id="mainnav" id="current">home</a>
+    <a href="index.html" id="aboutnav">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
 </div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
+
+<div class="container">
+    <div class="card">
+        <ion-icon name="film-outline" class=" icon1" id="icon1"></ion-icon>
+        <h2 class="filmy"> Filmy</h2>
+        <p>Mezi moje nejoblíbenější filmy a seriály patří Swiped, Gilmore Girls, Dobré místo, a animované filmy jako Hledá se Nemo.</p>
+        
+    </div>
+    
+    <div class="card">
+        <ion-icon name="book-outline" class=" icon2" id="icon2"></ion-icon>
+        <h2 class="knihy">Knihy</h2>
+       <p>Už dlouho čtu knihy jen v angličtině, kde je moje top Ace of Spades. Z klasiky Hamlet, Malý princ, nebo Romeo a Julie.</p>
+        
+    </div>
+
+    <div class="card">
+        <ion-icon name="color-palette-outline" class=" icon3" id="icon3"></ion-icon>
+        <h2 class="hudba">Hudba</h2>
+        <p>Main žánr? Pop.</p>
+        <button type="button" class="btn btn-info"> <a href="">Spotify</a> </button>
+    </div>
+    
+    <div class="card">
+        <ion-icon name="document-text-outline" class="icon4" id="icon4"></ion-icon>
+        <h2 class="hry">Hry</h2>
+       <p>Mezi moje top hry patří Minecraft, The Sims 4 nebo například Slime Rancher, které hrajái buď na pc nebo na Xboxu.</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 
 

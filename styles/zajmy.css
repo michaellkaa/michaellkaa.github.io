@@ -1,0 +1,123 @@
+
+.card {
+    width: 230px;
+    height: 380px;
+    /*background-color: var(--second-color);*/
+    border:  2px var(--third-color) solid;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 120px;
+    margin-right: 70px;
+    margin-left: 70px;
+    filter: brightness(90%);
+    transition: 1s;
+
+
+}
+
+/*.card:hover {
+    width: 240px;
+    height: 390px;
+    transition: 1s;
+    
+}*/
+
+.card:hover #icon1, .card:hover #icon2, .card:hover #icon3,  .card:hover #icon4 {
+    font-size: 100px;
+    transition: 1s;
+}
+
+.card:hover h2 {
+    padding-top: 5px;
+    transition: 5s;
+}
+
+.card h2 {
+    color: var(--second-color);
+    padding-top: 35px;
+    transition: 1s;
+}
+
+.card .filmy  {
+    /*font-family: 'Source Code Pro', monospace;*/
+    font-family: var(--second-font);
+    letter-spacing: 1.5px;
+    transition: 1s;
+    font-weight: 400;
+}
+
+.card .knihy {
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: var(--second-font);
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: 1s;
+}
+
+.card .hudba {
+    /*font-family: 'Comic Neue', cursive;*/
+    font-family: var(--second-font);
+    letter-spacing: 0.75px;
+    transition: 1s;
+   /* font-weight: 300;*/
+   font-weight: 400;
+}
+
+.card .hry {
+   /* font-family: 'Ibarra Real Nova', serif;*/
+   font-family: var(--second-font);
+    letter-spacing: 2px;
+    transition: 1s;
+    font-weight: 400;
+}
+
+.card:hover .filmy, .card:hover .knihy, .card:hover .hudba, .card:hover .hry  {
+    transition: 1s;
+}
+
+.card .hudba  {
+    top: 2px;
+}
+
+.card p {
+    color: var(--fourth-color);
+    transition: 1s;
+    font-size: 12px;
+    padding: 5px 20px;
+    font-family: var(--second-font);
+}
+
+.card .btn {
+    background-color: var(--third-color);
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    border: 0.5px solid var(--third-color);
+    font-family: var(--second-font);
+    transition: 0.3s;
+    margin-top: 4px;
+}
+
+.card .btn a {
+    color: var(--first-color);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+.card button:hover {
+    background-color: var(--fourth-color);
+    transition: 1s;
+    border: 0.5px solid var(--fourth-color);
+}
+
+.card #icon1, .card #icon2, .card #icon3, .card #icon4 {
+    font-size: 70px;
+    padding-top: 80px;
+    color: var(--second-color);
+    transition: 1s;
+}
+
+footer {
+    margin-top: 200px;
+}

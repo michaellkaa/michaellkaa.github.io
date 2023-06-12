@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 20px ;
+    margin: 0 ;
     padding: 0%;
     background-color: var(--first-color);
     text-align: center;
@@ -222,14 +222,14 @@ section .slova img{
 }
 
 
-.kontakt {
+.udaje {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 100px 0 0 200px;
 }
 
-.kontakt a {
+.udaje a {
      font-weight: 500;
      font-family: var(--second-font);
      text-decoration: underline;
@@ -241,7 +241,7 @@ section .slova img{
      font-size: 35px;
 }
 
-.kontakt a:hover {
+.udaje a:hover {
     color: var(--fourth-color);
 }
 
