@@ -159,7 +159,7 @@ header {
 }
 
 footer {
-    background-color: var(--fourth-color);
+    background-color: var(--fifth-color);
     padding-top: 40px;
     padding-bottom: 5px;
     height: auto;
@@ -167,7 +167,7 @@ footer {
 
 .kontakt .mail, .kontakt .instagram {
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--second-color);
     font-size: 25px;
     padding-left: 15px;
     padding-right: 15px;
@@ -181,7 +181,7 @@ footer {
 
 
 .kontakt p {
-    color: var(--first-color);
+    color: var(--second-color);
     opacity: 30%;
 }
 
