@@ -172,6 +172,7 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
     transition: 0.7s;
+    text-align: center;
 }
 
 .kontakt .mail:hover, .kontakt .instagram:hover {

@@ -82,8 +82,16 @@ body {
 
 .fotka1, .fotka2, .fotka3, .fotka4, .fotka5, .fotka6, .fotka7, .fotka8, .fotka9 {
     padding: 20px;
+   /* display: flex;
+    flex-direction: column;*/
 }
-
+/*
+.lide .fotka1,.lide .fotka2,.lide .fotka3,.lide .fotka4, .zvirata .fotka5,.zvirata .fotka6,.zvirata .fotka7,.ostatni .fotka8,.ostatni .fotka9
+{
+    display: flex;
+    flex-direction: row;
+}
+*/
 .fotka1 img, .fotka2 img, .fotka3 img, .fotka4 img, .fotka5 img, .fotka6 img, .fotka7 img, .fotka8 img, .fotka9 img {
     height: 300px;
     width: auto;

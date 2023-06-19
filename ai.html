@@ -7,6 +7,7 @@
     <title>Adobe Illustrator</title>
     <link rel="stylesheet" href="styles/ai.css">
     <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
@@ -19,25 +20,44 @@
 
 
 <body onload="loader()">
-    
     <div class="load" id="loader">
-      <img src="logo-black_b.png" id="load-logo" class="invert">
+      <img src="./logo-black_b.png" id="load-logo" class="invert">
     </div>
     <span style="display:none;" id="home" class="homepage">
 
-        <div class="icons">
-            <a href="index.html" class="home-icon">
-                <ion-icon name="home-outline"></ion-icon>
-            </a>
-        
-            <a href="portfolio.html" class="portfolio-icon">
-                <ion-icon name="reader-outline"></ion-icon>
-            </a>
-        
-            <a href="#" class="star-icon" onclick="changeColorMode()">
-                <ion-icon name="star-half-outline"></ion-icon>
-            </a>
-        </div>
+    
+    <header class="header1">
+    <div class="navigace">
+    
+<nav>
+    
+    <img src="logo-black_b.png" id="logo" class="invert" >
+    <a href="index.html" >home</a>
+    <a href="index.html" >about</a>
+    <a href="portfolio.html" id="current">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</nav>
+</div >
+</header>
+<header class="header2">
+<div class="open-mobile-nav">
+    
+    <nav>
+        <div class="mobile-nav" id="mySidenav">
+    <img src="logo-black_b.png" id="mobile-logo" class="invert">
+    
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" id="mainnav" >home</a>
+    <a href="index.html" id="aboutnav">about</a>
+    <a href="portfolio.html" id="current">portfolio</a>
+    <a href="kontakt.html">contact</a>
+    <a href="" onclick="changeColorMode()" id="dark-mode" ><ion-icon name="flashlight-outline" class="flash"></ion-icon></a>
+</div>
+</nav>
+<p class="open" style="font-size:30px; cursor:pointer;" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></p></div>
+</header>
 
 
         <div class="mp">

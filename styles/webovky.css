@@ -41,6 +41,7 @@
    text-transform: uppercase;
    letter-spacing: 0.4px;
    transition: 1s;
+   text-align: left;
 }
 
 .pic1 .text1{
@@ -126,6 +127,7 @@
    text-transform: uppercase;
    letter-spacing: 0.4px;
    transition: 1s;
+   text-align: left;
 }
 
 .pic3 .text3 {
@@ -181,6 +183,10 @@
 
 }
 
+#kontakt {
+    margin-top: 450px;
+}
+
 @media screen and (max-width: 1028px){
     .pic1 img, .pic2 img, .pic3 img {width: 400px; height: auto;}
     .pic4 img { width: 300px; height: auto;}
@@ -192,6 +198,9 @@
     .pic1 ul, .pic2 ul, .pic3 ul, .pic4 ul { text-align: center; color: var(--second-color); padding: 0%; margin: 0%;}
     .pic1 img, .pic2 img, .pic3 img , .pic4 img {border-color: var(--third-color); margin: 0%;}
     .pic1, .pic2, .pic3 {padding: 50px;}
+    #kontakt {
+        margin-top: 150px;
+    }
 }
 
 @media screen and (max-width: 476px){

@@ -204,6 +204,7 @@ text-align: right;}
     margin-left: 70px;
     filter: brightness(90%);
     transition: 1s;
+    margin-bottom: 140px;
 }
 
 /*.card:hover {
