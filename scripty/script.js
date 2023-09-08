@@ -1,3 +1,5 @@
+var root = document.querySelector(':root');
+
 document.addEventListener('DOMContentLoaded', () => {
     const elementBody = document.body;
 
