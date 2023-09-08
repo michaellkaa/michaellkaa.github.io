@@ -1,35 +1,19 @@
-var root = document.querySelector(':root');
+document.addEventListener('DOMContentLoaded', () => {
+    const elementBody = document.body;
 
-function setColorMode() {
-    var elementBody = document.body;
-    
-    if (localStorage.getItem("colorMode") == "dark") {
-        elementBody.classList.add("dark-mode");
-    } else {
-        elementBody.classList.remove("dark-mode");
+    function setColorMode() {
+        elementBody.classList.toggle("dark-mode", localStorage.getItem("colorMode") === "dark");
     }
 
-
-
-};
-
-
-function changeColorMode () {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-
-    if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("colorMode", "dark");
-    } else {
-        localStorage.setItem("colorMode", "light");
+    function changeColorMode() {
+        elementBody.classList.toggle("dark-mode");
+        localStorage.setItem("colorMode", elementBody.classList.contains("dark-mode") ? "dark" : "light");
     }
 
-    console.log(localStorage.getItem("colorMode")); 
-};
+    setColorMode();
 
-
-
-setColorMode();
+    elementBody.addEventListener('click', changeColorMode);
+});
 
 
 
